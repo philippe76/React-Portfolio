@@ -1,127 +1,151 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: #282c34;
-  background-color: #16171a;
+  color: gainsboro;
 }
 
-/* ----- Navbar -----  */
+/* ---------- NAVBAR ------------  */
 
 .App-header {
   min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(19px + 2vmin);
+  font-weight: bold;
   position: sticky;
   top: 0;
   background-color: #282c34;
-  background-color: #16171a;
-  color: #ffeaae;
+  color: gainsboro;
+  padding-bottom: 2rem;
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 0.1rem;
+  border-bottom: 2px solid gainsboro;
 }
 
 #logo {
   margin-left: 30px;
-  /* color: white; */
   cursor: pointer;
   font-size: 2.4rem;
 }
 
 a.link {
-  /* color: white; */
   margin: 0 70px;
   text-decoration: none;
   cursor: pointer;
+  padding: 0.3rem;
 }
 
 a.link.active {
-  /* color: rgb(194, 194, 127); */
-  border-bottom: 1px solid #ffeaae;
+  color: #8b6e74;
 }
 
-.link:hover {
-  font-size: calc(16px + 2vmin);
-  /* color: rgb(194, 194, 127); */
-}
-
-/* ----- Main Page ------ */
-
-.box-container {
-  display: flex;
-  margin-top: 10rem;
-}
+/* ----------- MAIN PAGE ------------- */
 
 .box {
-  box-sizing: border-box;
-  width: 100%;
-  height: 30rem;
-  /* border: 2px solid gray; */
-  border-radius: 7px;
-  margin: 50px;
+  margin: 10rem 3rem;
+}
+
+.box h2 {
+  font-size: calc(21px + 2vmin);
+  font-family: "Shadows Into Light", cursive;
+}
+
+/* ----------- PROFIL COMPONENT ------------- */
+
+#profile {
+  letter-spacing: 0.2rem;
   display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  /* box-shadow: 4px 3px 7px 2px gray; */
+  align-items: baseline;
+  justify-content: space-between;
 }
 
-.box-title {
-  font-size: 7rem;
-  color: antiquewhite;
+.profile-card {
+  width: 40%;
+  margin: 0 auto;
 }
 
-.box-content {
-  padding: 6%;
-  color: white;
+#profile-title {
+  font-size: calc(23px + 3vmin);
+  text-shadow: 2px 2px 2px #b10f2e;
 }
 
-.box-content h4 {
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
-  margin: 0;
-}
-
-#profil-name {
-  font-size: 3rem;
-}
-
-.box-content p {
-  line-height: 2rem;
-  letter-spacing: 0.2rem;
-}
-
-#profil img {
+#profile img {
+  width: 300px;
+  height: 300px;
   border-radius: 5%;
+  border: 2px solid silver;
+  box-shadow: 3px 2px 3px 1px silver;
+}
+
+#profile p {
+  font-size: calc(2px + 2vmin);
+  line-height: 2rem;
+  font-family: "Oswald", sans-serif;
 }
 
 .stack {
-  /* border: 1px solid white; */
   text-align: center;
-  color: white;
-  font-size: 2rem;
+  width: 40%;
+}
+
+.stack h2 {
+  margin-bottom: 5rem;
 }
 
 .icon {
-  color: white;
-  margin-left: 3rem;
-  font-size: 3.5rem;
+  margin: 3.5rem;
+  font-size: 6rem;
 }
 
 .icon:nth-child(2) {
   color: #e54c21;
 }
 
-.icon:nth-child(5) {
-  color: #8bbf3d;
+.icon:nth-child(3) {
+  color: #27a4d8;
 }
 
 .icon:nth-child(4) {
   color: #f7e018;
 }
 
-.icon:nth-child(3) {
-  color: #27a4d8;
+.icon:nth-child(5) {
+  color: #8bbf3d;
 }
 
 .icon:nth-child(6) {
   color: #5ed3f3;
+}
+
+/* ----------- PROJECT COMPONENT ------------- */
+
+#project {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  border: 2px solid gray;
+  width: 650px;
+  height: 350px;
+  border-radius: 3%;
+  margin: 50px;
+}
+
+.inner-box {
+  width: 650px;
+  height: 350px;
+  border-radius: 2%;
+}
+
+.project-card h2 {
+  border: 2px solid antiquewhite;
+  width: 30%;
+  margin: 20% auto;
+  padding: 10px;
+  text-align: center;
 }
 
 #contact {
@@ -131,5 +155,4 @@ a.link.active {
 .footer {
   text-align: right;
   margin: 20px;
-  color: white;
 }

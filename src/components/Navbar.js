@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const [linkText, setLinkText] = useState();
+  const [target, setTarget] = useState();
+
+  const handleHover = (e) => {
+    setTarget(e.target.innerText);
+    setLinkText("< " + e.target.innerText + " >");
+  };
+
   return (
     <nav className="App-header">
       <Link
@@ -12,30 +20,34 @@ const Navbar = () => {
         duration={500}
         id="logo"
       >
-        &lt; P.L / &gt;
+        &lt; P.L /&gt;
       </Link>
       <div className="menu">
         <Link
           activeClass="active"
-          to="profil"
+          to="profile"
           spy={true}
           smooth={true}
           offset={-300}
           duration={500}
           className="link"
+          onMouseOver={handleHover}
+          onMouseOut={handleHover}
         >
-          Profil
+          {target === "Profil" ? linkText : "Profil"}
         </Link>
         <Link
           activeClass="active"
-          to="projet"
+          to="project"
           spy={true}
           smooth={true}
           offset={-100}
           duration={500}
           className="link"
+          onMouseOver={handleHover}
+          onMouseOut={handleHover}
         >
-          Projet
+          {target === "Projet" ? linkText : "Projet"}
         </Link>
         <Link
           activeClass="active"
@@ -45,8 +57,10 @@ const Navbar = () => {
           offset={200}
           duration={-100}
           className="link"
+          onMouseOver={handleHover}
+          onMouseOut={handleHover}
         >
-          CV
+          {target === "CV" ? linkText : "CV"}
         </Link>
         <Link
           activeClass="active"
@@ -56,8 +70,10 @@ const Navbar = () => {
           offset={-400}
           duration={500}
           className="link"
+          onMouseOver={handleHover}
+          onMouseOut={handleHover}
         >
-          Contact
+          {target === "Contact" ? linkText : "Contact"}
         </Link>
       </div>
     </nav>
