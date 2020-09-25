@@ -1,6 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCogs } from "@fortawesome/free-solid-svg-icons";
 import {
   faNodeJs,
   faJs,
@@ -12,10 +11,7 @@ import {
 const Stack = () => {
   return (
     <div className="stack">
-      <h2>
-        {/* <FontAwesomeIcon icon={faCogs} className="icon" /> Ma stack */}- Ma
-        stack -
-      </h2>
+      <h2> {"[ Ma stack ]"} </h2>
       <FontAwesomeIcon icon={faHtml5} className="icon" />
       <FontAwesomeIcon icon={faCss3Alt} className="icon" />
       <FontAwesomeIcon icon={faJs} className="icon" />

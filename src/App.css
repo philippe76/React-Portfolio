@@ -16,12 +16,13 @@ body {
   font-weight: bold;
   position: sticky;
   top: 0;
-  background-color: #282c34;
   color: gainsboro;
   padding-bottom: 2rem;
   font-family: "Shadows Into Light", cursive;
   letter-spacing: 0.1rem;
   border-bottom: 2px solid gainsboro;
+  z-index: 100;
+  background-color: rgba(40, 44, 52, 0.9);
 }
 
 #logo {
@@ -39,6 +40,7 @@ a.link {
 
 a.link.active {
   color: #8b6e74;
+  text-shadow: 2px 2px 2px #b10f2e;
 }
 
 /* ----------- MAIN PAGE ------------- */
@@ -48,7 +50,7 @@ a.link.active {
 }
 
 .box h2 {
-  font-size: calc(21px + 2vmin);
+  font-size: calc(22px + 2vmin);
   font-family: "Shadows Into Light", cursive;
 }
 
@@ -121,32 +123,76 @@ a.link.active {
 
 /* ----------- PROJECT COMPONENT ------------- */
 
-#project {
+#project div {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
+}
+
+#project > h2 {
+  text-align: center;
 }
 
 .project-card {
   border: 2px solid gray;
-  width: 650px;
+  width: 450px;
   height: 350px;
   border-radius: 3%;
   margin: 50px;
+  color: white;
 }
 
 .inner-box {
-  width: 650px;
+  width: 450px;
   height: 350px;
   border-radius: 2%;
 }
 
-.project-card h2 {
-  border: 2px solid antiquewhite;
-  width: 30%;
-  margin: 20% auto;
-  padding: 10px;
+.project-info {
+  border: 2px solid white;
+  border-radius: 2%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 75%;
+  margin: 1rem auto;
+  text-align: center;
+  word-spacing: 0.8rem;
+  font-size: 1.2rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.project-info svg {
+  margin: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.project-info svg:hover {
+  color: rgb(233, 233, 125);
+}
+
+/* ----------- CV COMPONENT ------------- */
+
+#cv {
+  margin-top: 20%;
+  height: 500px;
   text-align: center;
 }
+
+#cv canvas {
+  border: 4px solid gainsboro;
+  border-radius: 2%;
+  box-shadow: 3px 2px 3px 1px silver;
+  margin: 0 auto;
+}
+
+.cv-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  /* position: absolute; */
+}
+
+/* ----------- CONTACT COMPONENT ------------- */
 
 #contact {
   margin-top: 600px;

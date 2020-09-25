@@ -47,15 +47,15 @@ const Navbar = () => {
           onMouseOver={handleHover}
           onMouseOut={handleHover}
         >
-          {target === "Projet" ? linkText : "Projet"}
+          {target === "Projets" ? linkText : "Projets"}
         </Link>
         <Link
           activeClass="active"
           to="cv"
           spy={true}
           smooth={true}
-          offset={200}
-          duration={-100}
+          offset={-350}
+          duration={500}
           className="link"
           onMouseOver={handleHover}
           onMouseOut={handleHover}
