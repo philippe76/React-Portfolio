@@ -1,66 +1,75 @@
+/* ----------- MAIN PAGE ------------- */
+
 body {
   margin: 0;
   padding: 0;
+  font-size: calc(1rem + 2vmin);
+  font-family: "Shadows Into Light", cursive;
   background-color: #282c34;
   color: gainsboro;
+}
+
+.big-title {
+  color: #f6e58d;
+  font-size: calc(1.3rem + 2vmin);
+  text-align: center;
+}
+
+.paragraph {
+  font-family: "Oswald", sans-serif;
+  font-size: calc(0.2rem + 2vmin);
+  line-height: 2rem;
+}
+
+.box {
+  margin: 15rem 3rem;
+  padding: 2%;
+  border-radius: 2%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 /* ---------- NAVBAR ------------  */
 
 .App-header {
   min-height: 10vh;
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: calc(19px + 2vmin);
   font-weight: bold;
-  position: sticky;
-  top: 0;
-  color: gainsboro;
-  padding-bottom: 2rem;
-  font-family: "Shadows Into Light", cursive;
   letter-spacing: 0.1rem;
+  padding-bottom: 2rem;
   border-bottom: 2px solid gainsboro;
-  z-index: 100;
   background-color: rgba(40, 44, 52, 0.9);
+  z-index: 100;
 }
 
 #logo {
-  margin-left: 30px;
+  margin-left: 1.8rem;
   cursor: pointer;
-  font-size: 2.4rem;
 }
 
 a.link {
-  margin: 0 70px;
+  margin: 0 4.3rem;
   text-decoration: none;
   cursor: pointer;
-  padding: 0.3rem;
 }
 
 a.link.active {
-  color: #8b6e74;
+  color: #f6e58d;
   text-shadow: 2px 2px 2px #b10f2e;
-}
-
-/* ----------- MAIN PAGE ------------- */
-
-.box {
-  margin: 10rem 3rem;
-}
-
-.box h2 {
-  font-size: calc(22px + 2vmin);
-  font-family: "Shadows Into Light", cursive;
 }
 
 /* ----------- PROFIL COMPONENT ------------- */
 
 #profile {
-  letter-spacing: 0.2rem;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  margin-top: 10rem;
+  letter-spacing: 0.2rem;
 }
 
 .profile-card {
@@ -69,27 +78,28 @@ a.link.active {
 }
 
 #profile-title {
-  font-size: calc(23px + 3vmin);
+  margin-bottom: 0;
+  font-size: calc(1.4rem + 3vmin);
+  color: #f6e58d;
   text-shadow: 2px 2px 2px #b10f2e;
 }
 
 #profile img {
-  width: 300px;
-  height: 300px;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem 0;
   border-radius: 5%;
   border: 2px solid silver;
   box-shadow: 3px 2px 3px 1px silver;
 }
 
 #profile p {
-  font-size: calc(2px + 2vmin);
-  line-height: 2rem;
-  font-family: "Oswald", sans-serif;
+  margin-top: 0;
 }
 
 .stack {
-  text-align: center;
   width: 40%;
+  text-align: center;
 }
 
 .stack h2 {
@@ -129,35 +139,35 @@ a.link.active {
   flex-wrap: wrap;
 }
 
-#project > h2 {
-  text-align: center;
-}
-
 .project-card {
   border: 2px solid gray;
-  width: 450px;
-  height: 350px;
+  width: 28rem;
+  height: 22rem;
   border-radius: 3%;
-  margin: 50px;
+  margin: 3.1rem;
+  color: white;
+}
+
+.project-card h2 {
   color: white;
 }
 
 .inner-box {
-  width: 450px;
-  height: 350px;
+  width: 28rem;
+  height: 22rem;
   border-radius: 2%;
 }
 
 .project-info {
-  border: 2px solid white;
+  border: 2px solid #f6e58d;
   border-radius: 2%;
-  background-color: rgba(0, 0, 0, 0.5);
   width: 75%;
-  margin: 1rem auto;
+  margin: 0.4rem auto;
   text-align: center;
   word-spacing: 0.8rem;
   font-size: 1.2rem;
-  font-family: "Oswald", sans-serif;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
 }
 
 .project-info svg {
@@ -168,37 +178,81 @@ a.link.active {
 }
 
 .project-info svg:hover {
-  color: rgb(233, 233, 125);
+  color: #faefb7;
 }
 
 /* ----------- CV COMPONENT ------------- */
 
-#cv {
-  margin-top: 20%;
-  height: 500px;
+#cv h2 {
   text-align: center;
 }
 
-#cv canvas {
+.cv-container {
+  display: flex;
+  justify-content: space-between;
+  height: 20rem;
+}
+
+.cv-container p {
+  width: 50%;
+  letter-spacing: 0.2rem;
+}
+
+.cv-container img {
   border: 4px solid gainsboro;
   border-radius: 2%;
   box-shadow: 3px 2px 3px 1px silver;
   margin: 0 auto;
 }
 
-.cv-background {
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-  /* position: absolute; */
+.cv-container svg {
+  color: white;
+  margin: 3rem;
+  font-size: 2rem;
 }
 
 /* ----------- CONTACT COMPONENT ------------- */
 
 #contact {
-  margin-top: 600px;
+  /* margin: 80px 3rem;
+  height: 400px; */
+  text-align: center;
 }
+
+#contact svg {
+  font-size: 5rem;
+  margin: 5rem 6rem;
+  cursor: pointer;
+  color: white;
+}
+
+#contact svg:hover {
+  color: #faefb7;
+}
+
+#contact a[href="tel:33660803766"] {
+  position: relative;
+}
+
+#contact a[href="tel:33660803766"]:hover::after {
+  position: absolute;
+  top: -250%;
+  left: 75%;
+  border-radius: 3%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  content: "06 60 80 37 66";
+  width: 80%;
+  font-size: 1.3rem;
+  font-family: "Oswald", sans-serif;
+}
+
+/* ----------- FOOTER ------------- */
 
 .footer {
   text-align: right;
-  margin: 20px;
+  font-size: 1.2rem;
+  margin: 1.2rem 3.1rem;
+  word-spacing: 0.3rem;
 }

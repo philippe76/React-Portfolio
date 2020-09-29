@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
+// import Nav from "./components/Nav";
 import Profile from "./components/Profile";
 import Project from "./components/Project";
 import Cv from "./components/Cv";

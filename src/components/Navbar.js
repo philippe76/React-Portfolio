@@ -41,7 +41,7 @@ const Navbar = () => {
           to="project"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-300}
           duration={500}
           className="link"
           onMouseOver={handleHover}
@@ -67,7 +67,7 @@ const Navbar = () => {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-400}
+          offset={-350}
           duration={500}
           className="link"
           onMouseOver={handleHover}

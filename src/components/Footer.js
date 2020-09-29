@@ -4,7 +4,9 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <p className="footer">Copyright © {year} - Philippe Lanougadere</p>
+      <p className="footer paragraph">
+        Copyright © {year} - Philippe Lanougadere
+      </p>
     </>
   );
 };
