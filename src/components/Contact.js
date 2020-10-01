@@ -10,7 +10,7 @@ import {
 
 const Contact = () => {
   return (
-    <div className="box" id="contact">
+    <section className="box" id="contact">
       <h2 className="box-title big-title">{"[ Me contacter ]"}</h2>
       <a
         href="https://github.com/philippe76"
@@ -43,7 +43,7 @@ const Contact = () => {
       <a href="tel:33660803766">
         <FontAwesomeIcon icon={faMobileAlt} />
       </a>
-    </div>
+    </section>
   );
 };
 

@@ -51,7 +51,7 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="cv"
+          to="patchkwork"
           spy={true}
           smooth={true}
           offset={-350}

@@ -25,7 +25,7 @@ body {
 .box {
   margin: 15rem 3rem;
   padding: 2%;
-  border-radius: 2%;
+  /* border-radius: 2%; */
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
@@ -75,7 +75,6 @@ a.link.active {
 .profile-box {
   margin: 10rem 3rem;
   padding: 2%;
-  border-radius: 2%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
@@ -104,6 +103,8 @@ a.link.active {
 #profile p {
   margin-top: 0;
 }
+
+/* ----------- STACK COMPONENT ------------- */
 
 .stack {
   width: 40%;
@@ -191,69 +192,104 @@ a.link.active {
 
 /* ----------- CV COMPONENT ------------- */
 
-#cv h2 {
-  text-align: center;
+#patchkwork {
+  margin-bottom: 1rem;
 }
 
-.cv-container {
+#cv {
+  margin-top: 0;
+}
+
+.patch-container {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
 }
 
-.cv-container:nth-of-type(2),
-.cv-container:nth-of-type(3) {
+.patch-container:nth-of-type(2),
+.patch-container:nth-of-type(3) {
   align-items: baseline;
 }
 
-.cv-container p {
+.patch-container p {
   letter-spacing: 0.2rem;
   margin: 3rem 0 3rem 6rem;
 }
 
-.cv-container p:first-of-type {
+.patch-container p:first-of-type {
   margin-left: 5rem;
 }
 
-.cv-container p:nth-of-type(2) {
+.patch-container p:nth-of-type(2) {
   margin-left: 7rem;
 }
 
-.cv-container hr {
+.patch-container hr {
   margin: 0 5.5rem;
   width: 0px;
   height: 100px;
 }
 
-.cv-container svg {
+.patch-container svg {
   color: white;
   margin: 3rem;
   font-size: 2rem;
 }
 
-.date {
+.work-pic {
   border: 3px solid gainsboro;
   border-radius: 100%;
   display: inline;
   padding: 1rem;
 }
 
-.cv-pic {
+.cv-container {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.cv-pic p {
-  width: 40%;
+.cv-container p {
+  width: 30%;
+  letter-spacing: 0.1rem;
 }
 
-.cv-pic img {
+.cv-container img {
   border: 2px solid gainsboro;
   border-radius: 2%;
-  margin-left: 10rem;
-  /* box-shadow: 3px 2px 3px 1px silver; */
+  height: 15rem;
+  width: 20rem;
+}
+
+.cv-pic {
+  border: 2px solid gainsboro;
+  border-radius: 2%;
+  height: 15rem;
+  width: 20rem;
+  background: url("./images/cvPic3.PNG");
+}
+
+.cv-download {
+  text-align: center;
+  width: 70%;
+  margin: 6.5rem auto;
+}
+
+.cv-pic svg {
+  color: gainsboro;
+  margin: 0 1.5rem;
+  font-size: 2.4rem;
+}
+
+.cv-pic svg:hover {
+  color: #faefb7;
 }
 
 /* ----------- CONTACT COMPONENT ------------- */
+
+#contact:last-of-type {
+  margin-bottom: 7rem;
+}
 
 #contact {
   text-align: center;
