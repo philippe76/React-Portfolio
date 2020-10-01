@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Nav from "./components/Nav";
 import Profile from "./components/Profile";
 import Project from "./components/Project";
 import Cv from "./components/Cv";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
+import Burger from "./components/Burger";
 
 function App() {
   const [bigWidth, setbigWidth] = useState(true);
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div id="home">
-      {bigWidth ? <Navbar /> : <Nav />}
+      {bigWidth ? <Navbar /> : <Burger />}
       <Profile />
       <Project />
       <Cv />

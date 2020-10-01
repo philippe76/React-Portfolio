@@ -67,7 +67,7 @@ const Navbar = () => {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-350}
+          offset={-300}
           duration={500}
           className="link"
           onMouseOver={handleHover}

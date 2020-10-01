@@ -216,6 +216,10 @@ a.link.active {
   margin: 3rem 0 3rem 6rem;
 }
 
+.patch-container .mobile-paragraph {
+  display: none;
+}
+
 .patch-container p:first-of-type {
   margin-left: 5rem;
 }
@@ -225,6 +229,7 @@ a.link.active {
 }
 
 .patch-container hr {
+  /* display: block; */
   margin: 0 5.5rem;
   width: 0px;
   height: 100px;
@@ -333,7 +338,13 @@ a.link.active {
   word-spacing: 0.3rem;
 }
 
+#test {
+  display: none;
+}
+
+/* ------------------------------------------ */
 /* ----------- RESPONSIVE RULES ------------- */
+/* ------------------------------------------ */
 
 @media only screen and (max-width: 1220px) {
   .box {
@@ -396,17 +407,61 @@ a.link.active {
   .bm-menu {
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
-    width: 100%;
+    min-width: 100%;
   }
 
   /* Styling of overlay */
   .bm-overlay {
-    width: 100%;
+    min-width: 100%;
     background-color: rgba(40, 44, 52, 0.7);
   }
 
   .bm-menu-wrap {
-    width: 100%;
+    min-width: 100%;
     background-color: rgba(40, 44, 52, 0.7);
+  }
+
+  /* ----------- CV SECTION ------------- */
+
+  .patch-container hr {
+    display: none;
+  }
+
+  .patch-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .patch-container svg {
+    font-size: 4rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .patch-container .mobile-paragraph {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  #patchwork {
+    margin-bottom: 10rem;
+  }
+
+  .patch-container:last-of-type {
+    display: none;
+  }
+
+  .cv-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cv-container p {
+    width: 80%;
+  }
+
+  .cv-pic {
+    margin: 3rem 0;
   }
 }

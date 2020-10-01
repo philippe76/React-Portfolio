@@ -14,10 +14,15 @@ const PatchWork = () => {
       <h2 className="big-title"> {"[ Mon parcours ]"} </h2>
       <div className="patch-container">
         <FontAwesomeIcon icon={faGraduationCap} className="work-pic" />
+        <p className="paragraph mobile-paragraph">Bac L</p>
         <FontAwesomeIcon icon={faBoxOpen} className="work-pic" />
+        <p className="paragraph mobile-paragraph">Manutention</p>
         <FontAwesomeIcon icon={faEdit} className="work-pic" />
+        <p className="paragraph mobile-paragraph">Management</p>
         <FontAwesomeIcon icon={faTruckMoving} className="work-pic" />
+        <p className="paragraph mobile-paragraph">Poids-Lourd</p>
         <FontAwesomeIcon icon={faLaptopCode} className="work-pic" />
+        <p className="paragraph mobile-paragraph">Programmation</p>
       </div>
       <div className="patch-container">
         <hr />

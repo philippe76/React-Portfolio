@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { reveal as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
 
-const Nav = () => {
+const Burger = () => {
   const [linkText, setLinkText] = useState();
   const [target, setTarget] = useState();
 
@@ -83,4 +83,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Burger;
