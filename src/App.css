@@ -421,6 +421,27 @@ a.link.active {
     background-color: rgba(40, 44, 52, 0.7);
   }
 
+  /* ----------- PROJECT SECTION ------------- */
+
+  .project-card {
+    width: 22rem;
+    height: 17rem;
+  }
+
+  .inner-box {
+    width: 22rem;
+    height: 17rem;
+  }
+
+  .project-info {
+    width: 100%;
+    margin-top: -1rem;
+  }
+
+  .project-info p {
+    font-size: 1.3rem;
+  }
+
   /* ----------- CV SECTION ------------- */
 
   .patch-container hr {
@@ -444,8 +465,8 @@ a.link.active {
     margin: 0 !important;
   }
 
-  #patchwork {
-    margin-bottom: 10rem;
+  .paragraph.mobile-paragraph:last-of-type {
+    padding-bottom: 3rem;
   }
 
   .patch-container:last-of-type {
