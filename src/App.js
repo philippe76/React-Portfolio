@@ -10,19 +10,17 @@ import { useState, useEffect } from "react";
 import Burger from "./components/Burger";
 
 function App() {
-  const [bigWidth, setbigWidth] = useState(true);
-
-  // window.addEventListener("resize", () => {
-  //   setbigWidth(!bigWidth);
-  // });
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    window.matchMedia("(max-width: 1220px)").matches && setbigWidth(false);
-  }, [bigWidth]);
+    window.addEventListener("resize", () => {
+      setWindowWidth(window.innerWidth);
+    });
+  }, []);
 
   return (
     <div id="home">
-      {bigWidth ? <Navbar /> : <Burger />}
+      {windowWidth > 1220 ? <Navbar /> : <Burger />}
       <Profile />
       <Project />
       <Cv />
