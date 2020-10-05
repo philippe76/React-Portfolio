@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { slide as Menu } from "react-burger-menu";
+import { stack as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
 
 const Burger = () => {
