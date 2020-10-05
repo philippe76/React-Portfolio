@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { reveal as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
 
 const Burger = () => {
@@ -24,8 +24,8 @@ const Burger = () => {
       >
         &lt; P.L /&gt;
       </Link>
-
-      <Menu className="menu">
+      <h2 className="profile-title">- Philippe LANOUGADERE -</h2>
+      <Menu className="menu" right width={"100%"} disableAutoFocus>
         <Link
           activeClass="active"
           to="profile"

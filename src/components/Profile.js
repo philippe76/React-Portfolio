@@ -7,7 +7,7 @@ const Profile = () => {
     <>
       <section className="profile-box" id="profile">
         <div className="profile-card">
-          <h2 id="profile-title">- Philippe LANOUGADERE -</h2>
+          <h2 className="profile-title">- Philippe LANOUGADERE -</h2>
           <img src={profile} alt="profile pic" />
           <p className="paragraph">
             Développeur Web JavaScript. En reconversion professionnelle après un
