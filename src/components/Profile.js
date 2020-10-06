@@ -12,9 +12,9 @@ const Profile = () => {
           <p className="paragraph">
             Développeur Web JavaScript. En reconversion professionnelle après un
             parcours de vie assez varié. Passé du management à la conduite de
-            poids lourds. Je prends du plaisir aujourd'hui dans la
-            programmation. J'ai choisi de me spécialiser dans l'environnement
-            JavaScript, du front-end avec React au back-end avec Node.
+            poids lourds. Je prends aujourd'hui énormément de plaisir avec la
+            programmation. J'ai choisi de me spécialiser dans JavaScript et son
+            environnement, du front-end avec React Js au back-end avec Node Js.
           </p>
         </div>
         <Stack />
