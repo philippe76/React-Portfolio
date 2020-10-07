@@ -252,8 +252,12 @@ a.link.active {
 }
 
 .cv-container p {
-  width: 30%;
+  /* width: 30%; */
   letter-spacing: 0.1rem;
+}
+
+.cv-container code {
+  white-space: pre;
 }
 
 .cv-container img {
@@ -268,7 +272,7 @@ a.link.active {
   border-radius: 2%;
   height: 15rem;
   width: 20rem;
-  background: url("./images/cvPic3.PNG");
+  background: url("./images/cvPic.PNG");
 }
 
 .cv-download {

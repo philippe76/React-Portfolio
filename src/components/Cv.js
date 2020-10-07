@@ -33,21 +33,23 @@ const Cv = () => {
         <h2 className="big-title"> {"[ Mon CV ]"} </h2>
         <div className="cv-container">
           <p className="paragraph">
-            On dit qu'aujourd'hui une personne passe par deux reconversions
-            professionnelles la dernière s'est terminée sur une blessure Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-            blanditiis? Fuga inventore atque dignissimos recusandae accusamus
-            doloribus harum, hic pariatur sunt, eius sint in magni nostrum, quos
-            velit facere iure?
+            <code>
+              {`const code_skills = {                
+  HTML: 5,
+  CSS: [3, "Bootstrap"],
+  JavaScript: ["ES6", "jQuery", “ReactJs", “NodeJs"],
+  responsive_design: true,
+  version_control: "Git",
+  IDE: "Visual Studio Code", 	
+};
+const soft_skills = [“Positif, “Bosseur", “Tenace", “Volontaire"];
+
+if (interested) {
+	dowload(cv).then( infos => call_me(infos.tel)
+)}; `}
+            </code>
           </p>
-          <p className="paragraph">
-            On dit qu'aujourd'hui une personne passe par deux reconversions
-            professionnelles la dernière s'est terminée sur une blessure Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-            blanditiis? Fuga inventore atque dignissimos recusandae accusamus
-            doloribus harum, hic pariatur sunt, eius sint in magni nostrum, quos
-            velit facere iure?
-          </p>
+
           <div className="cv-pic">
             <div
               onMouseOver={handleHover}
