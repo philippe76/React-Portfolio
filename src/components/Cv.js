@@ -19,9 +19,6 @@ const Cv = () => {
   };
 
   const cvBackground = {
-    borderRadius: "2%",
-    height: "15rem",
-    width: "20rem",
     backgroundColor: hover && "rgba(0, 0, 0, 0.6)",
     position: hover && "absolute",
   };
@@ -34,7 +31,7 @@ const Cv = () => {
         <div className="cv-container">
           <p className="paragraph">
             <code>
-              {`const code_skills = {                
+              {`const hard_skills = {                
   HTML: 5,
   CSS: [3, "Bootstrap"],
   JavaScript: ["ES6", "jQuery", “ReactJs", “NodeJs"],
@@ -42,11 +39,11 @@ const Cv = () => {
   version_control: "Git",
   IDE: "Visual Studio Code", 	
 };
-const soft_skills = [“Positif, “Bosseur", “Tenace", “Volontaire"];
+const soft_skills = ["Bosseur", "Positif", "Curieux", "Tenace", "Cooperatif"];
 
 if (interested) {
-	dowload(cv).then( infos => call_me(infos.tel)
-)}; `}
+	dowload(cv).then( infos => call_me(infos.tel) )
+}; `}
             </code>
           </p>
 
@@ -55,6 +52,7 @@ if (interested) {
               onMouseOver={handleHover}
               onMouseOut={handleHover}
               style={cvBackground}
+              className="cv-background"
             >
               <div className="cv-download" style={download}>
                 <a href={CV} download="Lanougadere_Philippe_CV">

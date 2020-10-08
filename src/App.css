@@ -252,38 +252,42 @@ a.link.active {
 }
 
 .cv-container p {
-  /* width: 30%; */
   letter-spacing: 0.1rem;
 }
 
 .cv-container code {
-  white-space: pre;
+  white-space: pre-line;
 }
 
 .cv-container img {
   border: 2px solid gainsboro;
   border-radius: 2%;
-  height: 15rem;
-  width: 20rem;
 }
 
 .cv-pic {
   border: 2px solid gainsboro;
   border-radius: 2%;
-  height: 15rem;
-  width: 20rem;
-  background: url("./images/cvPic.PNG");
+  height: 26rem;
+  width: 18rem;
+  background: url("./images/cv-pic.PNG");
+  overflow: hidden;
+  position: relative;
+}
+
+.cv-background {
+  border-radius: 2%;
+  height: 26rem;
+  width: 18rem;
 }
 
 .cv-download {
   text-align: center;
-  width: 70%;
-  margin: 6.5rem auto;
+  margin: 11rem auto;
 }
 
 .cv-pic svg {
   color: gainsboro;
-  margin: 0 1.5rem;
+  margin: 0 2rem;
   font-size: 2rem;
 }
 
@@ -516,10 +520,23 @@ a.link.active {
   }
 
   .cv-container p {
-    width: 80%;
+    width: 90%;
   }
 
   .cv-pic {
+    height: 15rem;
+    width: 18.5rem;
     margin: 3rem 0;
+    background-image: center/contain;
+  }
+
+  .cv-background {
+    height: 15rem;
+    width: 18.5rem;
+  }
+
+  .cv-download {
+    text-align: center;
+    margin: 6rem auto;
   }
 }
