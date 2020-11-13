@@ -357,6 +357,7 @@ a.link.active {
   .box {
     border-radius: 0;
     margin: 5rem 3rem;
+    background-color: #282c34;
   }
 
   #contact:last-of-type {
@@ -426,6 +427,11 @@ a.link.active {
   .profile-box {
     margin: 3rem;
     border-radius: 0;
+    background-color: #282c34;
+  }
+
+  #profile img {
+    max-width: 100%;
   }
 
   .profile-title {
