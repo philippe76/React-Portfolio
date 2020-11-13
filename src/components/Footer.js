@@ -1,8 +1,24 @@
-import React from "react";
-import visitCount from '../visitorTracker'
+import React, {useState, useEffect} from "react";
+
 
 const Footer = () => {
+
   const year = new Date().getFullYear();
+  const [visitCount, setVisitCount] = useState(0)
+
+  const updateVisitCount = () => {
+    fetch('https://api.countapi.xyz/update/filip-dev/portfolio/?amount=1')
+        .then(res => res.json())
+        .then(res => {
+            setVisitCount(res.value);
+        })
+  }
+
+  useEffect(()=>{
+    updateVisitCount()
+  },[]);
+
+
   return (
     <>
       <p className="footer paragraph">
@@ -10,6 +26,7 @@ const Footer = () => {
       </p>
     </>
   );
+
 };
 
 export default Footer;
