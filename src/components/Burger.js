@@ -24,7 +24,7 @@ const Burger = () => {
       >
         &lt; P.L /&gt;
       </Link>
-      <h2 className="profile-title">- Philippe LANOUGADERE -</h2>
+      <h2 className="profile-title">Philippe LANOUGADERE</h2>
       <Menu className="menu" right width={"100%"} disableAutoFocus>
         <Link
           activeClass="active"
