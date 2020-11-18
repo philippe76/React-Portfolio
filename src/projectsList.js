@@ -7,6 +7,7 @@ import cv from "./images/cv.PNG";
 import portfolio from "./images/portfolio.PNG";
 import bioWebsite from "./images/bioWebsite.PNG";
 import todolistNode from "./images/todolistNode.PNG";
+import calculator from "./images/calculator.PNG";
 
 const projects = [
   {
@@ -20,6 +21,15 @@ const projects = [
   },
   {
     id: 2,
+    title: "JS CALCULATOR",
+    background: calculator,
+    tech: "html css javascript",
+    github: "https://github.com/philippe76/JavaScript-Calculator",
+    url: "https://philippe76.github.io/JavaScript-Calculator/",
+    credits: "Filip ",
+  },
+  {
+    id: 3,
     title: "TRAVEL WEBSITE",
     background: greta,
     github: "https://github.com/philippe76/TravelSite-Greta-Project",
@@ -28,7 +38,7 @@ const projects = [
     credits: "Filip ",
   },
   {
-    id: 3,
+    id: 4,
     title: "TINDOG APP",
     background: tindog,
     github: "https://github.com/philippe76/TinDog-App-Template",
@@ -38,7 +48,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "SIMON GAME",
     background: simongame,
     github: "https://github.com/philippe76/Simon-Game",
@@ -47,7 +57,7 @@ const projects = [
     credits: "Filip - AngelaYu",
   },
   {
-    id: 5,
+    id: 6,
     title: "WEB CV",
     background: cv,
     github: "https://github.com/philippe76/Web-developer-CV",
@@ -56,7 +66,7 @@ const projects = [
     credits: "Filip",
   },
   {
-    id: 6,
+    id: 7,
     title: "REACT TODO-LIST",
     background: todolistReact,
     github: "https://github.com/philippe76/React-Basic-To-Do-List",
@@ -65,7 +75,7 @@ const projects = [
     credits: "Filip",
   },
   {
-    id: 7,
+    id: 8,
     title: "PORTFOLIO",
     background: portfolio,
     github: "https://github.com/philippe76/Personal-Portfolio-WebPage",
@@ -74,7 +84,7 @@ const projects = [
     credits: "Filip",
   },
   {
-    id: 8,
+    id: 9,
     title: "LANDING PAGE",
     background: bioWebsite,
     github: "https://github.com/philippe76/Product-Landing-Page",
@@ -83,7 +93,7 @@ const projects = [
     credits: "Filip",
   },
   {
-    id: 9,
+    id: 10,
     title: "NODE TODO-LIST",
     background: todolistNode,
     github: "https://github.com/philippe76/Node-Js-To-do-list-App",
