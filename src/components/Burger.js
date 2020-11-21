@@ -5,11 +5,17 @@ import { Link } from "react-scroll";
 const Burger = () => {
   const [linkText, setLinkText] = useState();
   const [target, setTarget] = useState();
-
+  const [menuOpen, setMenuOpen] = useState(false);
+ 
   const handleHover = (e) => {
     setTarget(e.target.innerText);
     setLinkText("< " + e.target.innerText + " >");
   };
+
+  const closeMenu = (e) => {
+    e.preventDefault();
+    setMenuOpen(!menuOpen);
+  }
 
   return (
     <nav className="App-header">
@@ -25,7 +31,7 @@ const Burger = () => {
         &lt; P.L /&gt;
       </Link>
       <h2 className="profile-title">Philippe LANOUGADERE</h2>
-      <Menu className="menu" right width={"100%"} disableAutoFocus>
+      <Menu className="menu" right width={"100%"} isOpen={menuOpen}>
         <Link
           activeClass="active"
           to="profile"
@@ -36,6 +42,7 @@ const Burger = () => {
           className="link menu-item"
           onMouseOver={handleHover}
           onMouseOut={handleHover}
+          onClick={closeMenu}
         >
           {target === "Profil" ? linkText : "Profil"}
         </Link>
@@ -49,6 +56,7 @@ const Burger = () => {
           className="link menu-item"
           onMouseOver={handleHover}
           onMouseOut={handleHover}
+          onClick={closeMenu}
         >
           {target === "Projets" ? linkText : "Projets"}
         </Link>
@@ -62,6 +70,7 @@ const Burger = () => {
           className="link menu-item"
           onMouseOver={handleHover}
           onMouseOut={handleHover}
+          onClick={closeMenu}
         >
           {target === "CV" ? linkText : "CV"}
         </Link>
@@ -75,6 +84,7 @@ const Burger = () => {
           className="link menu-item"
           onMouseOver={handleHover}
           onMouseOut={handleHover}
+          onClick={closeMenu}
         >
           {target === "Contact" ? linkText : "Contact"}
         </Link>
