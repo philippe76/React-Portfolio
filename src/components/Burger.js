@@ -12,10 +12,11 @@ const Burger = () => {
     setLinkText("< " + e.target.innerText + " >");
   };
 
-  const closeMenu = (e) => {
-    e.preventDefault();
+  const closeMenu = () => {
     setMenuOpen(!menuOpen);
   }
+
+  const stateChangeHandler = (newState) => {setMenuOpen(newState.isOpen)}
 
   return (
     <nav className="App-header">
@@ -31,7 +32,7 @@ const Burger = () => {
         &lt; P.L /&gt;
       </Link>
       <h2 className="profile-title">Philippe LANOUGADERE</h2>
-      <Menu className="menu" right width={"100%"} isOpen={menuOpen}>
+      <Menu className="menu" right width={"100%"} isOpen={menuOpen} onStateChange={(state) => stateChangeHandler(state)}>
         <Link
           activeClass="active"
           to="profile"
