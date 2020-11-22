@@ -13,15 +13,6 @@ import clock from "./images/js-clock.PNG";
 const projects = [
   {
     id: 1,
-    title: "CHIFOUMI GAME",
-    background: chifoumi,
-    tech: "html css javascript",
-    github: "https://github.com/philippe76/JS-Rock-Paper-Scissors",
-    url: "https://philippe76.github.io/JS-Rock-Paper-Scissors/",
-    credits: "Filip ",
-  },
-  {
-    id: 2,
     title: "JS CALCULATOR",
     background: calculator,
     tech: "html css javascript",
@@ -30,13 +21,22 @@ const projects = [
     credits: "Filip ",
   },
   {
-    id: 3,
-    title: "TRAVEL WEBSITE",
-    background: greta,
-    github: "https://github.com/philippe76/TravelSite-Greta-Project",
-    url: "https://philippe76.github.io/TravelSite-Greta-Project/index.html",
-    tech: "html css jquery",
+    id: 2,
+    title: "CHIFOUMI GAME",
+    background: chifoumi,
+    tech: "html css javascript",
+    github: "https://github.com/philippe76/JS-Rock-Paper-Scissors",
+    url: "https://philippe76.github.io/JS-Rock-Paper-Scissors/",
     credits: "Filip ",
+  },
+  {
+    id: 3,
+    title: "JS RUNCLOCK",
+    background: clock,
+    github: "https://github.com/philippe76/JavaScript-Clock",
+    url: "https://philippe76.github.io/JavaScript-Clock/",
+    tech: "html css javascript",
+    credits: "Filip",
   },
   {
     id: 4,
@@ -47,7 +47,6 @@ const projects = [
     tech: "html css bootstrap",
     credits: "Filip - AngelaYu",
   },
-
   {
     id: 5,
     title: "SIMON GAME",
@@ -59,12 +58,12 @@ const projects = [
   },
   {
     id: 6,
-    title: "WEB CV",
-    background: cv,
-    github: "https://github.com/philippe76/Web-developer-CV",
-    url: "https://philippe76.github.io/Web-developer-CV/",
-    tech: "html css",
-    credits: "Filip",
+    title: "TRAVEL WEBSITE",
+    background: greta,
+    github: "https://github.com/philippe76/TravelSite-Greta-Project",
+    url: "https://philippe76.github.io/TravelSite-Greta-Project/index.html",
+    tech: "html css jquery",
+    credits: "Filip ",
   },
   {
     id: 7,
@@ -102,13 +101,14 @@ const projects = [
     tech: "html css node ejs",
     credits: "Filip",
   },
+  
   {
     id: 11,
-    title: "JS RUNCLOCK",
-    background: clock,
-    github: "https://github.com/philippe76/JavaScript-Clock",
-    url: "https://philippe76.github.io/JavaScript-Clock/",
-    tech: "html css javascript",
+    title: "WEB CV",
+    background: cv,
+    github: "https://github.com/philippe76/Web-developer-CV",
+    url: "https://philippe76.github.io/Web-developer-CV/",
+    tech: "html css",
     credits: "Filip",
   },
 
