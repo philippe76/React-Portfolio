@@ -1,4 +1,4 @@
-import chifoumi from "./images/chifoumi.PNG";
+import chifoumi from "./images/RPS-game.PNG";
 import greta from "./images/greta.PNG";
 import tindog from "./images/tindog.PNG";
 import todolistReact from "./images/todolistReact.PNG";
@@ -8,6 +8,7 @@ import portfolio from "./images/portfolio.PNG";
 import bioWebsite from "./images/bioWebsite.PNG";
 import todolistNode from "./images/todolistNode.PNG";
 import calculator from "./images/calculator.PNG";
+import clock from "./images/js-clock.PNG";
 
 const projects = [
   {
@@ -15,8 +16,8 @@ const projects = [
     title: "CHIFOUMI GAME",
     background: chifoumi,
     tech: "html css javascript",
-    github: "https://github.com/philippe76/ChiFouMi-Game",
-    url: "https://philippe76.github.io/ChiFouMi-Game/",
+    github: "https://github.com/philippe76/JS-Rock-Paper-Scissors",
+    url: "https://philippe76.github.io/JS-Rock-Paper-Scissors/",
     credits: "Filip ",
   },
   {
@@ -101,6 +102,16 @@ const projects = [
     tech: "html css node ejs",
     credits: "Filip",
   },
+  {
+    id: 11,
+    title: "JS RUNCLOCK",
+    background: clock,
+    github: "https://github.com/philippe76/JavaScript-Clock",
+    url: "https://philippe76.github.io/JavaScript-Clock/",
+    tech: "html css javascript",
+    credits: "Filip",
+  },
+
 ];
 
 export default projects;
