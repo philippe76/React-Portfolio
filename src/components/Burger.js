@@ -16,7 +16,9 @@ const Burger = () => {
     setMenuOpen(!menuOpen);
   }
 
-  const stateChangeHandler = (newState) => {setMenuOpen(newState.isOpen)}
+  const stateChangeHandler = (newState) => {
+    setMenuOpen(newState.isOpen)
+  }
 
   return (
     <nav className="App-header">

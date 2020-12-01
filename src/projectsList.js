@@ -9,6 +9,7 @@ import bioWebsite from "./images/bioWebsite.PNG";
 import todolistNode from "./images/todolistNode.PNG";
 import calculator from "./images/calculator.PNG";
 import clock from "./images/js-clock.PNG";
+import google from "./images/google.PNG";
 
 const projects = [
   {
@@ -40,12 +41,12 @@ const projects = [
   },
   {
     id: 4,
-    title: "TINDOG APP",
-    background: tindog,
-    github: "https://github.com/philippe76/TinDog-App-Template",
-    url: "https://philippe76.github.io/TinDog-App-Template/",
-    tech: "html css bootstrap",
-    credits: "Filip - AngelaYu",
+    title: "GOOGLE CLONE",
+    background: google,
+    github: "https://github.com/philippe76/Google-SearchPage",
+    url: "https://philippe76.github.io/Google-SearchPage/",
+    tech: "html css javascript",
+    credits: "Filip",
   },
   {
     id: 5,
@@ -67,20 +68,20 @@ const projects = [
   },
   {
     id: 7,
+    title: "TINDOG APP",
+    background: tindog,
+    github: "https://github.com/philippe76/TinDog-App-Template",
+    url: "https://philippe76.github.io/TinDog-App-Template/",
+    tech: "html css bootstrap",
+    credits: "Filip - AngelaYu",
+  },
+  {
+    id: 8,
     title: "REACT TODO-LIST",
     background: todolistReact,
     github: "https://github.com/philippe76/React-Basic-To-Do-List",
     url: "https://philippe76.github.io/React-Basic-To-Do-List/",
     tech: "react bootstrap",
-    credits: "Filip",
-  },
-  {
-    id: 8,
-    title: "PORTFOLIO",
-    background: portfolio,
-    github: "https://github.com/philippe76/Personal-Portfolio-WebPage",
-    url: "https://philippe76.github.io/Personal-Portfolio-WebPage/",
-    tech: "html css",
     credits: "Filip",
   },
   {
@@ -94,16 +95,24 @@ const projects = [
   },
   {
     id: 10,
+    title: "PORTFOLIO",
+    background: portfolio,
+    github: "https://github.com/philippe76/Personal-Portfolio-WebPage",
+    url: "https://philippe76.github.io/Personal-Portfolio-WebPage/",
+    tech: "html css",
+    credits: "Filip",
+  },
+  {
+    id: 11,
     title: "NODE TODO-LIST",
     background: todolistNode,
     github: "https://github.com/philippe76/Node-Js-To-do-list-App",
     url: "https://vvux6.sse.codesandbox.io/",
     tech: "html css node ejs",
     credits: "Filip",
-  },
-  
+  },  
   {
-    id: 11,
+    id: 12,
     title: "WEB CV",
     background: cv,
     github: "https://github.com/philippe76/Web-developer-CV",
