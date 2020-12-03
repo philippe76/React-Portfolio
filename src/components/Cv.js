@@ -42,7 +42,7 @@ const Cv = () => {
 const soft_skills = ["Bosseur", "Positif", "Curieux", "Tenace", "Cooperatif"];
 
 if (interested) {
-	dowload(cv).then( infos => call_me(infos.tel) )
+	download(cv).then( infos => call_me(infos.tel) )
 }; `}
             </code>
           </p>
