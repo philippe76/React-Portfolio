@@ -10,18 +10,19 @@ import todolistNode from "./images/todolistNode.PNG";
 import calculator from "./images/calculator.PNG";
 import clock from "./images/js-clock.PNG";
 import google from "./images/google.PNG";
+import hangman from "./images/hangman.PNG";
 
 const projects = [
   {
     id: 1,
-    title: "JS CALCULATOR",
-    background: calculator,
-    tech: "html css javascript",
-    github: "https://github.com/philippe76/JavaScript-Calculator",
-    url: "https://philippe76.github.io/JavaScript-Calculator/",
+    title: "HANGMAN GAME",
+    background: hangman,
+    tech: "css javascript react",
+    github: "https://github.com/philippe76/React-HangMan-Game",
+    url: "https://tender-kowalevski-a1beea.netlify.app/",
     credits: "Filip ",
   },
-  {
+    {
     id: 2,
     title: "CHIFOUMI GAME",
     background: chifoumi,
@@ -32,13 +33,14 @@ const projects = [
   },
   {
     id: 3,
-    title: "JS RUNCLOCK",
-    background: clock,
-    github: "https://github.com/philippe76/JavaScript-Clock",
-    url: "https://philippe76.github.io/JavaScript-Clock/",
+    title: "JS CALCULATOR",
+    background: calculator,
     tech: "html css javascript",
-    credits: "Filip",
+    github: "https://github.com/philippe76/JavaScript-Calculator",
+    url: "https://philippe76.github.io/JavaScript-Calculator/",
+    credits: "Filip ",
   },
+
   {
     id: 4,
     title: "GOOGLE CLONE",
@@ -68,21 +70,21 @@ const projects = [
   },
   {
     id: 7,
+    title: "JS RUNCLOCK",
+    background: clock,
+    github: "https://github.com/philippe76/JavaScript-Clock",
+    url: "https://philippe76.github.io/JavaScript-Clock/",
+    tech: "html css javascript",
+    credits: "Filip",
+  },
+  {
+    id: 8,
     title: "TINDOG APP",
     background: tindog,
     github: "https://github.com/philippe76/TinDog-App-Template",
     url: "https://philippe76.github.io/TinDog-App-Template/",
     tech: "html css bootstrap",
     credits: "Filip - AngelaYu",
-  },
-  {
-    id: 8,
-    title: "REACT TODO-LIST",
-    background: todolistReact,
-    github: "https://github.com/philippe76/React-Basic-To-Do-List",
-    url: "https://philippe76.github.io/React-Basic-To-Do-List/",
-    tech: "react bootstrap",
-    credits: "Filip",
   },
   {
     id: 9,
@@ -104,15 +106,6 @@ const projects = [
   },
   {
     id: 11,
-    title: "NODE TODO-LIST",
-    background: todolistNode,
-    github: "https://github.com/philippe76/Node-Js-To-do-list-App",
-    url: "https://vvux6.sse.codesandbox.io/",
-    tech: "html css node ejs",
-    credits: "Filip",
-  },  
-  {
-    id: 12,
     title: "WEB CV",
     background: cv,
     github: "https://github.com/philippe76/Web-developer-CV",
@@ -120,6 +113,15 @@ const projects = [
     tech: "html css",
     credits: "Filip",
   },
+  {
+    id: 11,
+    title: "NODE TODO-LIST",
+    background: todolistNode,
+    github: "https://github.com/philippe76/Node-Js-To-do-list-App",
+    url: "https://vvux6.sse.codesandbox.io/",
+    tech: "html css node ejs",
+    credits: "Filip",
+  },  
 
 ];
 
