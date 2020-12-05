@@ -113,15 +113,15 @@ const projects = [
     tech: "html css",
     credits: "Filip",
   },
-  {
-    id: 11,
-    title: "NODE TODO-LIST",
-    background: todolistNode,
-    github: "https://github.com/philippe76/Node-Js-To-do-list-App",
-    url: "https://vvux6.sse.codesandbox.io/",
-    tech: "html css node ejs",
-    credits: "Filip",
-  },  
+  // {
+  //   id: 11,
+  //   title: "NODE TODO-LIST",
+  //   background: todolistNode,
+  //   github: "https://github.com/philippe76/Node-Js-To-do-list-App",
+  //   url: "https://vvux6.sse.codesandbox.io/",
+  //   tech: "html css node ejs",
+  //   credits: "Filip",
+  // },  
 
 ];
 
