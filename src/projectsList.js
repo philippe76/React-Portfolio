@@ -1,12 +1,12 @@
 import chifoumi from "./images/RPS-game.PNG";
 import greta from "./images/greta.PNG";
 import tindog from "./images/tindog.PNG";
-import todolistReact from "./images/todolistReact.PNG";
+// import todolistReact from "./images/todolistReact.PNG";
 import simongame from "./images/simongame.PNG";
 import cv from "./images/cv.PNG";
 import portfolio from "./images/portfolio.PNG";
 import bioWebsite from "./images/bioWebsite.PNG";
-import todolistNode from "./images/todolistNode.PNG";
+// import todolistNode from "./images/todolistNode.PNG";
 import calculator from "./images/calculator.PNG";
 import clock from "./images/js-clock.PNG";
 import google from "./images/google.PNG";
