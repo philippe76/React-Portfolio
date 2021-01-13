@@ -25,7 +25,7 @@ const ProjectCard = (props) => {
         className="project-card"
         onMouseOver={handleChange}
         onMouseOut={handleChange}
-        style={{ background: `center / contain no-repeat url(${props.background})` }}
+        style={{ background: `center / contain no-repeat url(${props.background})`, backgroundColor: 'gainsboro' }}
       >
         <div style={divStyle} className="inner-box">
           <div style={infoStyle} className="project-info">
