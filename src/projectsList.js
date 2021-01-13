@@ -16,7 +16,7 @@ import foodApp from "./images/foodApp.PNG";
 const projects = [
   {
     id: 11,
-    title: "FOOD APP",
+    title: "FOOD MOBILE APP",
     background: foodApp,
     tech: "javascript react-native",
     github: "https://github.com/philippe76/TimeToLunch",
