@@ -11,15 +11,25 @@ import calculator from "./images/calculator.PNG";
 import clock from "./images/js-clock.PNG";
 import google from "./images/google.PNG";
 import hangman from "./images/hangman.PNG";
+import foodApp from "./images/foodApp.PNG";
 
 const projects = [
+  {
+    id: 11,
+    title: "FOOD APP",
+    background: foodApp,
+    tech: "javascript react-native",
+    github: "https://github.com/philippe76/TimeToLunch",
+    url: "https://philippe76.github.io/TimeToLunch/",
+    credits: "Filip ",
+  },
   {
     id: 1,
     title: "HANGMAN GAME",
     background: hangman,
     tech: "css javascript react",
     github: "https://github.com/philippe76/React-HangMan-Game",
-    url: "https://tender-kowalevski-a1beea.netlify.app/",
+    url: "https://philippe76.github.io/React-HangMan-Game/",
     credits: "Filip ",
   },
     {
