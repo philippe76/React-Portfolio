@@ -361,6 +361,10 @@ a.link.active {
     background-color: #282c34;
   }
 
+  .box#cv {
+    margin-left: 0;
+  }
+
   #contact:last-of-type {
     margin-bottom: 2rem;
   }
@@ -534,6 +538,7 @@ a.link.active {
     height: 15rem;
     width: 18.5rem;
     margin: 3rem 0;
+    margin-left: 5rem;
     background-image: center/contain;
   }
 

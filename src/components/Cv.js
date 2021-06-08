@@ -30,21 +30,22 @@ const Cv = () => {
         <h2 className="big-title"> {"[ Mon CV ]"} </h2>
         <div className="cv-container">
           <p className="paragraph">
-            <code>
+            <pre>
               {`const hard_skills = {                
-  HTML: 5,
-  CSS: [3, "Bootstrap"],
-  JavaScript: ["ES6", "jQuery", “ReactJs", “NodeJs"],
-  responsive_design: true,
-  version_control: "Git",
-  IDE: "Visual Studio Code", 	
+    HTML: 5,
+    CSS: [3, "Bootstrap"],
+    JavaScript: ["ES6", "jQuery", “ReactJs", “NodeJs"],
+    responsive_design: true,
+    version_control: "Git",
+    IDE: "Visual Studio Code", 	
 };
+
 const soft_skills = ["Bosseur", "Positif", "Curieux", "Tenace", "Cooperatif"];
 
 if (interested) {
-	download(cv).then( infos => call_me(infos.tel) )
+  	download(cv).then( infos => call_me(infos.tel) )
 }; `}
-            </code>
+            </pre>
           </p>
 
           <div className="cv-pic">
