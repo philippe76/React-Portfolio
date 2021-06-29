@@ -22,7 +22,8 @@ const Footer = () => {
   return (
     <>
       <p className="footer paragraph">
-        Copyright © {year} - Philippe Lanougadere - <span id='track'>{visitCount}</span>
+        Copyright © {year} - Philippe Lanougadere 
+        {/* - <span id='track'>{visitCount}</span> */}
       </p>
     </>
   );
