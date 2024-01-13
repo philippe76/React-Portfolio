@@ -5,15 +5,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: calc(1rem + 2vmin);
+  font-size: calc(0.9rem + 0.9vw);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #20232a;
   color: gainsboro;
 }
 
 .big-title {
-  font-size: calc(1.3rem + 2vmin);
+  font-size: calc(1.3rem + 1vw);
   text-align: center;
+  margin-top: 5rem;
 }
 
 
@@ -51,8 +52,12 @@ a.link {
   cursor: pointer;
 }
 
+a.link:hover {
+  color:#64df15;
+}
+
 a.link.active {
-  color: #6A994D;
+  color: #64df15;
 }
 
 a.link.active::before {
@@ -76,18 +81,18 @@ a.link.active::after {
 }
 
 .profile-card {
-  width: 45%;
+  width: 48%;
 }
 
 .profile-title {
   margin-bottom: 2rem;
-  font-size: calc(1.2rem + 3vmin);
+  font-size: calc(1.2rem + 1vw);
   font-family: 'Raleway', sans-serif;
   color: #64df15;
 }
 
 .profile-txt {
-  font-size: calc(0.5rem + 2.5vmin);
+  font-size: calc(0.5rem + 0.9vw);
 }
 
 .profile-box img {
@@ -201,9 +206,6 @@ a.link.active::after {
 }
 
 .cv-pic {
-  /* border: 2px solid gainsboro;
-  border-radius: 2%; */
-  /* border-radius: 3px; */
   box-shadow: 3px 2px 3px 1px #64df15;
   height: 14rem;
   width: 20rem;
@@ -215,7 +217,6 @@ a.link.active::after {
 }
 
 .cv-background {
-  /* border-radius: 2%; */
   height: 14rem;
   width: 20rem;
 }
@@ -232,7 +233,7 @@ a.link.active::after {
 }
 
 .cv-pic svg:hover {
-  color: #faefb7;
+  color: #64df15;
 }
 
 /* ----------- CONTACT COMPONENT ------------- */
@@ -257,23 +258,43 @@ a.link.active::after {
   transform: scale(1.2);
 }
 
-#contact a[href="tel:33660803766"] {
+#contact a {
   position: relative;
 }
 
-#contact a[href="tel:33660803766"]:hover::after {
+#contact a[href*="github"]:hover::after {
+  content: "github.com/philippe76";
+}
+
+#contact a[href*="linkedin"]:hover::after {
+  content: "in/philippe-lanougadere";
+}
+
+#contact a[href*="twitter"]:hover::after {
+  content: "twitter.com/I_m_your_dev";
+}
+
+#contact a[href^="mail"]:hover::after {
+  content: "p.lanougadere@gmail.com";
+}
+
+#contact a[href^="tel"]:hover::after {
+  content: "06 60 80 37 66";
+}
+
+#contact a:hover::after {
   position: absolute;
-  top: -250%;
-  left: 75%;
+  top: -12rem;
+  left: 0;
   border-radius: 3%;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.2);
   color: white;
-  content: "06 60 80 37 66";
   width: 80%;
   font-size: 1.3rem;
   font-family: "Oswald", sans-serif;
 }
+
 
 /* ----------- FOOTER ------------- */
 
