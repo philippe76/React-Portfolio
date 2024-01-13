@@ -1,13 +1,16 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import projectsList from "../projectsList";
+import underConstruction from "../images/bandes-jaunes.png"
+
 
 const Project = () => {
   return (
     <section className="box" id="project">
       <h2 className="big-title">{" [ Mes Projets ]  "} </h2>
       <div>
-        {projectsList.map((item) => (
+      <img src={underConstruction} alt="bande jaune site en travaux" />
+        {/* {projectsList.map((item) => (
           <ProjectCard
             key={item.id}
             title={item.title}
@@ -17,7 +20,7 @@ const Project = () => {
             url={item.url}
             credits={item.credits}
           />
-        ))}
+        ))} */}
       </div>
     </section>
   );
