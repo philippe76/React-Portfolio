@@ -7,7 +7,6 @@ body {
   padding: 0;
   font-size: calc(1rem + 2vmin);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  /* background-color: #282c34; */
   background-color: #20232a;
   color: gainsboro;
 }
@@ -17,14 +16,9 @@ body {
   text-align: center;
 }
 
-.bio {
-  font-size: calc(0.5rem + 2.5vmin);
-}
 
 .box {
-  margin: 8rem 3rem;
-  padding: 2%;
-  /* background-color: rgba(0, 0, 0, 0.2); */
+  margin: 3rem;
   background-color: #20232a;
   z-index: 2;
 }
@@ -42,7 +36,6 @@ body {
   letter-spacing: 0.1rem;
   padding-bottom: 2rem;
   border-bottom: 2px solid gainsboro;
-  /* background-color: rgba(40, 44, 52, 0.9); */
   background-color: rgba(32, 35, 42, 0.9);
   z-index: 100;
 }
@@ -59,7 +52,15 @@ a.link {
 }
 
 a.link.active {
-  color:hsl(97, 83%, 38%);
+  color: #6A994D;
+}
+
+a.link.active::before {
+  content: "<"
+}
+
+a.link.active::after {
+  content: ">"
 }
 
 /* ----------- PROFIL COMPONENT ------------- */
@@ -71,6 +72,7 @@ a.link.active {
   align-items: center;
   height: 20rem;
   padding: 5rem 15rem;
+  margin-top: 3rem;
 }
 
 .profile-card {
@@ -84,8 +86,12 @@ a.link.active {
   color: #64df15;
 }
 
+.profile-txt {
+  font-size: calc(0.5rem + 2.5vmin);
+}
+
 .profile-box img {
-  width: 12rem;
+  width: 14rem;
   border-radius: 3px;
   box-shadow: 3px 2px 3px 1px #64df15;
 }
@@ -96,39 +102,36 @@ a.link.active {
 
 /* ----------- STACK COMPONENT ------------- */
 
-/* .stack {
-  width: 40%;
+.stack {
+  padding: 3rem 15rem;
   text-align: center;
-} */
-
-.stack h2 {
-  margin-bottom: 5rem;
 }
 
 .icon {
   margin: 3.5rem;
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
-.icon:nth-child(2) {
+.icon:nth-child(1) {
   color: #e54c21;
 }
 
-.icon:nth-child(3) {
+.icon:nth-child(2) {
   color: #27a4d8;
 }
 
-.icon:nth-child(4) {
+.icon:nth-child(3) {
   color: #f7e018;
+}
+
+.icon:nth-child(4) {
+  color: #5ed3f3;
 }
 
 .icon:nth-child(5) {
   color: #8bbf3d;
 }
 
-.icon:nth-child(6) {
-  color: #5ed3f3;
-}
 
 /* ----------- PROJECT COMPONENT ------------- */
 
@@ -182,59 +185,8 @@ a.link.active {
 
 /* ----------- CV COMPONENT ------------- */
 
-#patchkwork {
-  margin-bottom: 1rem;
-}
-
-#cv {
-  margin-top: 0;
-}
-
-.patch-container {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-}
-
-.patch-container:nth-of-type(2),
-.patch-container:nth-of-type(3) {
-  align-items: baseline;
-}
-
-.patch-container p {
-  letter-spacing: 0.2rem;
-  margin: 3rem 0 3rem 6rem;
-}
-
-.patch-container .mobile-paragraph {
-  display: none;
-}
-
-.patch-container p:first-of-type {
-  margin-left: 5rem;
-}
-
-.patch-container p:nth-of-type(2) {
-  margin-left: 7rem;
-}
-
-.patch-container hr {
-  margin: 0 5.5rem;
-  width: 0px;
-  height: 100px;
-}
-
-.patch-container svg {
-  color: white;
-  margin: 3rem;
-  font-size: 2rem;
-}
-
-.work-pic {
-  border: 3px solid gainsboro;
-  border-radius: 100%;
-  display: inline;
-  padding: 1rem;
+#cv .big-title {
+  margin-bottom: 3rem;
 }
 
 .cv-container {
@@ -243,35 +195,29 @@ a.link.active {
   justify-content: space-around;
 }
 
-.cv-container p {
-  letter-spacing: 0.1rem;
-}
-
-.cv-container code {
-  white-space: pre-line;
-}
-
-.cv-container img {
-  border: 2px solid gainsboro;
-  border-radius: 2%;
+.skills {
+  width: 30%;
+  font-size: 1.2rem;
 }
 
 .cv-pic {
-  border: 2px solid gainsboro;
-  border-radius: 2%;
+  /* border: 2px solid gainsboro;
+  border-radius: 2%; */
+  /* border-radius: 3px; */
+  box-shadow: 3px 2px 3px 1px #64df15;
   height: 14rem;
-  width: 18rem;
+  width: 20rem;
   background: url("./images/cv-pic.PNG");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
 }
 
 .cv-background {
-  border-radius: 2%;
+  /* border-radius: 2%; */
   height: 14rem;
-  width: 18rem;
+  width: 20rem;
 }
 
 .cv-download {
@@ -300,14 +246,15 @@ a.link.active {
 }
 
 #contact svg {
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 5rem 6rem;
   cursor: pointer;
   color: white;
 }
 
 #contact svg:hover {
-  color: #faefb7;
+  color: #64df15;
+  transform: scale(1.2);
 }
 
 #contact a[href="tel:33660803766"] {
@@ -349,9 +296,7 @@ a.link.active {
   /* ----------- MAIN PAGE ------------- */
 
   .box {
-    border-radius: 0;
-    margin: 5rem 3rem;
-    /* background-color: #282c34; */
+    margin: 3rem;
     background-color: #20232a
   }
 

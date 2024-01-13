@@ -25,13 +25,13 @@ const Cv = () => {
 
   return (
     <>
-      <PatchWork />
+      {/* <PatchWork /> */}
       <section className="box" id="cv">
         <h2 className="big-title"> {"[ Mon CV ]"} </h2>
         <div className="cv-container">
-          <p className="paragraph">
-            <pre>
-              {`const hard_skills = {                
+          <code>
+            <pre className="skills">
+            {`const hard_skills = {                
     HTML: 5,
     CSS: [3, "Bootstrap"],
     JavaScript: ["ES6", "jQuery", “ReactJs", “NodeJs"],
@@ -40,13 +40,13 @@ const Cv = () => {
     IDE: "Visual Studio Code", 	
 };
 
-const soft_skills = ["Bosseur", "Positif", "Curieux", "Tenace", "Cooperatif"];
+const soft_skills = ["Bosseur", "Positif", "Curieux", "Tenace"];
 
 if (interested) {
-  	download(cv).then( infos => call_me(infos.tel) )
+    download(cv).then( infos => call_me(infos.tel) )
 }; `}
-            </pre>
-          </p>
+          </pre>        
+        </code>
 
           <div className="cv-pic">
             <div

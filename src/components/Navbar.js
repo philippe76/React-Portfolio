@@ -5,10 +5,6 @@ const Navbar = () => {
   const [linkText, setLinkText] = useState();
   const [target, setTarget] = useState();
 
-  const handleHover = (e) => {
-    setTarget(e.target.innerText);
-    setLinkText("< " + e.target.innerText + " >");
-  };
 
   return (
     <nav className="App-header">
@@ -31,8 +27,6 @@ const Navbar = () => {
           offset={-300}
           duration={500}
           className="link"
-          onMouseOver={handleHover}
-          onMouseOut={handleHover}
         >
           {target === "Profil" ? linkText : "Profil"}
         </Link>
@@ -44,21 +38,17 @@ const Navbar = () => {
           offset={-300}
           duration={500}
           className="link"
-          onMouseOver={handleHover}
-          onMouseOut={handleHover}
         >
           {target === "Projets" ? linkText : "Projets"}
         </Link>
         <Link
           activeClass="active"
-          to="patchkwork"
+          to="cv"
           spy={true}
           smooth={true}
           offset={-350}
           duration={500}
           className="link"
-          onMouseOver={handleHover}
-          onMouseOut={handleHover}
         >
           {target === "CV" ? linkText : "CV"}
         </Link>
@@ -70,8 +60,6 @@ const Navbar = () => {
           offset={-300}
           duration={500}
           className="link"
-          onMouseOver={handleHover}
-          onMouseOut={handleHover}
         >
           {target === "Contact" ? linkText : "Contact"}
         </Link>

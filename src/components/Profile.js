@@ -5,17 +5,17 @@ import Stack from "./Stack";
 const Profile = () => {
   return (
     <>
-      <section className="profile-box">
+      <section className="profile-box" id="profile">
         <div className="profile-card">
           <h2 className="profile-title">
           Développeur Front-End
           </h2>
-          <p className="bio">
+          <p className="profile-txt">
             Bonjour, je m'appelle Philippe Lanougadere.</p>
-          <p className="bio">
+          <p className="profile-txt">
             De formation autodidacte, je suis formateur en développement web depuis 3 ans
           </p>
-          <p className="bio">
+          <p className="profile-txt">
             Adepte de nouveaux challenges, je cherche un cadre innovant dans lequel les relever
           </p>
         </div>

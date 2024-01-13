@@ -11,12 +11,11 @@ import {
 const Stack = () => {
   return (
     <section className="stack">
-      <h2 className="big-title"> {"[ Ma stack ]"} </h2>
       <FontAwesomeIcon icon={faHtml5} className="icon" />
       <FontAwesomeIcon icon={faCss3Alt} className="icon" />
       <FontAwesomeIcon icon={faJs} className="icon" />
-      <FontAwesomeIcon icon={faNodeJs} className="icon" />
       <FontAwesomeIcon icon={faReact} className="icon" />
+      <FontAwesomeIcon icon={faNodeJs} className="icon" />
     </section>
   );
 };
