@@ -17,8 +17,9 @@ body {
 
 .paragraph {
   font-family: "Oswald", sans-serif;
-  font-size: calc(0.2rem + 2vmin);
+  font-size: calc(0.2rem + 2.2vmin);
   line-height: 2rem;
+  text-align: justify;
 }
 
 .box {
@@ -268,22 +269,24 @@ a.link.active {
 .cv-pic {
   border: 2px solid gainsboro;
   border-radius: 2%;
-  height: 26rem;
+  height: 14rem;
   width: 18rem;
   background: url("./images/cv-pic.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
 }
 
 .cv-background {
   border-radius: 2%;
-  height: 26rem;
+  height: 14rem;
   width: 18rem;
 }
 
 .cv-download {
   text-align: center;
-  margin: 11rem auto;
+  margin-top: 35%;
 }
 
 .cv-pic svg {
