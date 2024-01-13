@@ -5,21 +5,23 @@ import Stack from "./Stack";
 const Profile = () => {
   return (
     <>
-      <section className="profile-box" id="profile">
+      <section className="profile-box">
         <div className="profile-card">
-          <h2 className="profile-title">Philippe LANOUGADERE</h2>
-          <img src={profile} alt="profile pic" />
+          <h2 className="profile-title">
+          Développeur Front-End
+          </h2>
           <p className="bio">
-            {/* Développeur Web JavaScript. En reconversion professionnelle après un
-            parcours de vie assez varié. Passé par le management et la conduite
-            de poids lourds. Je prends aujourd'hui énormément de plaisir dans la
-            programmation. J'ai choisi de me spécialiser dans JavaScript et son
-            environnement, du front-end avec React Js au back-end avec Node Js. */}
-            Autodidacte de formation, je suis formateur en développement web depuis maintenant 3 ans
+            Bonjour, je m'appelle Philippe Lanougadere.</p>
+          <p className="bio">
+            De formation autodidacte, je suis formateur en développement web depuis 3 ans
+          </p>
+          <p className="bio">
+            Adepte de nouveaux challenges, je cherche un cadre innovant dans lequel les relever
           </p>
         </div>
-        <Stack />
+        <img src={profile} alt="profile pic" />
       </section>
+      <Stack />
     </>
   );
 };
