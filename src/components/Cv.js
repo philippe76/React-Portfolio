@@ -1,33 +1,26 @@
 import React, { useState } from "react";
 import CV from "../images/CV.pdf";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faDownload,
-  faExternalLinkAlt,
-} from "@fortawesome/free-solid-svg-icons";
-import PatchWork from "./PatchWork";
 
 const Cv = () => {
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
 
-  const handleHover = () => {
-    setHover(!hover);
-  };
+  // const handleHover = () => {
+  //   setHover(!hover);
+  // };
 
-  const download = {
-    display: hover ? "block" : "none",
-  };
+  // const download = {
+  //   display: hover ? "block" : "none",
+  // };
 
-  const cvBackground = {
-    backgroundColor: hover && "rgba(0, 0, 0, 0.6)",
-    position: hover && "absolute",
-  };
+  // const cvBackground = {
+  //   backgroundColor: hover && "rgba(0, 0, 0, 0.6)",
+  //   position: hover && "absolute",
+  // };
 
   return (
     <>
-      {/* <PatchWork /> */}
       <section className="box" id="cv">
-        <h2 className="big-title"> {"[ Mon CV ]"} </h2>
+        <h2 className="big-title"> {"Mon CV"} </h2>
         <div className="cv-container">
           <code>
             <pre className="skills">
@@ -48,7 +41,7 @@ if (interested) {
           </pre>        
         </code>
 
-          <div className="cv-pic">
+          {/* <div className="cv-pic">
             <div
               onMouseOver={handleHover}
               onMouseOut={handleHover}
@@ -68,7 +61,12 @@ if (interested) {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
+
+          <a href={CV} download="Lanougadere_Philippe_CV" className="downloadCVMobile">
+                  download CV
+                </a>
+
         </div>
       </section>
     </>

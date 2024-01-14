@@ -7,7 +7,7 @@ import underConstruction from "../images/bandes-jaunes.png"
 const Project = () => {
   return (
     <section className="box" id="project">
-      <h2 className="big-title">{" [ Mes Projets ]  "} </h2>
+      <h2 className="big-title">{"Mes Projets"} </h2>
       <div>
       <img src={underConstruction} alt="bande jaune site en travaux" />
         {/* {projectsList.map((item) => (
