@@ -1,12 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faNodeJs,
-  faJs,
-  faHtml5,
-  faCss3Alt,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
+import { faNodeJs, faJs, faHtml5, faCss3Alt, faReact } from "@fortawesome/free-brands-svg-icons";
 
 const Stack = () => {
   return (

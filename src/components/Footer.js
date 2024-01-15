@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <>
-      <p className="footer paragraph">
+      <p className="footer-text">
         Copyright © {year} - Philippe Lanougadere 
       </p>
     </>

@@ -113,7 +113,7 @@ a.link.active::after {
 }
 
 .profile-txt {
-  font-size: calc(0.5rem + 0.9vw);
+  font-size: calc(0.5rem + 0.7vw);
 }
 
 .profile-box img {
@@ -185,14 +185,14 @@ a.link.active::after {
 
 .skills {
   width: 30%;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
 }
 
 .downloadCV {
   display: block;
   margin-top: 3rem;
   padding: 0.6em 1em;
-  font-size: 1.1em;
+  font-size: 0.85em;
   background: var(--btn-focus-color);
   color: var(--light-text-color);
   text-decoration: none;
@@ -263,17 +263,17 @@ a.link.active::after {
   background: var(--modal-icon-bg);
   color: var(--focus-color);
   width: 15rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-family: "Oswald", sans-serif;
 }
 
 
 /* ----------- FOOTER ------------- */
 
-.footer {
+.footer-text {
   text-align: right;
-  font-size: 1.2rem;
-  margin: 1.2rem 3.1rem;
+  font-size: 0.9rem;
+  margin-right: 2rem;
   word-spacing: 0.3rem;
 }
 

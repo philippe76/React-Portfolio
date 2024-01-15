@@ -1,12 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedin,
-  faTwitter,
-  faTelegramPlane,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faTwitter, faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
