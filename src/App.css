@@ -256,7 +256,7 @@ a.link.active::after {
 
 #contact svg {
   font-size: 2.5rem;
-  margin: 2.2rem;
+  margin: 2.5rem;
   cursor: pointer;
   color: white;
 }
@@ -292,13 +292,13 @@ a.link.active::after {
 
 #contact a:hover::after {
   position: absolute;
-  top: -12rem;
-  left: 0;
+  top: -8rem;
+  left: -5rem;
   border-radius: 3%;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.2);
   color: white;
-  width: 80%;
+  width: 15rem;
   font-size: 1.3rem;
   font-family: "Oswald", sans-serif;
 }
@@ -473,5 +473,19 @@ a.link.active::after {
     width: 90%;
   }
 
+  /* ----------- CONTACT  ------------- */
+
+  #contact.box {
+    margin: 0;
+  }
+
+  #contact svg {
+    font-size: 2rem;
+    margin: 1.5rem;
+  }
+
+  #contact a[href]:hover::after {
+    opacity: 0;
+  }
 
 }
