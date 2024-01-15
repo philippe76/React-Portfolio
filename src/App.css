@@ -1,14 +1,57 @@
+/* 
+
+background : #20232a  (black)
+background header : rgba(32, 35, 42, 0.9)  
+text: #dcdcdc (gainsboro)
+main: #64df15 (green flashy)
+
+background bouton download : #4eb110 (green un peu flashy)
+text bouton download : #dcdcdc (gainsboro)
+
+bouton:hover : inverse
+
+icon contact : #dcdcdc
+icon contact:hover : #64df15 (green flashy)
+
+background icon contact::after : rgba(0, 0, 0, 0.2)
+text icon contact::after : #dcdcdc (gainsboro) 
+
+background header Mobile transparent : rgba(32, 35, 42, 0);
+
+bars burger : #dcdcdc (gainsboro) 
+cross burger :  #dcdcdc (gainsboro) 
+
+bars burger:hover : #64df15 (green flashy)
+cross burger:hover :  #64df15 (green flashy)
+
+items menu burger : #dcdcdc (gainsboro) 
+
+overlay derriere menu burger : rgba(40, 44, 52, 0.9);
+
+*/
+
+
+
+
 /* ----------- MAIN PAGE ------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+
+:root {
+  --dark-bg-color: #20232a;
+  --light-text-color: #dcdcdc;
+  --focus-color: #64df15;
+}
+
+
 
 body {
   margin: 0;
   padding: 0;
   font-size: calc(0.9rem + 0.9vw);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #20232a;
-  color: gainsboro;
+  background-color: var(--dark-bg-color);
+  color: var(--light-text-color);
 }
 
 .big-title {
@@ -19,17 +62,16 @@ body {
 
 .big-title::before {
   content: '[ ';
-  color: #64df15;
+  color: var(--focus-color);
 }
 .big-title::after {
   content: ' ]';
-  color: #64df15;
+  color: var(--focus-color);
 }
 
 
 .box {
   margin: 3rem;
-  background-color: #20232a;
   z-index: 2;
 }
 
@@ -62,11 +104,11 @@ a.link {
 }
 
 a.link:hover {
-  color:#64df15;
+  color:var(--focus-color);
 }
 
 a.link.active {
-  color: #64df15;
+  color: var(--focus-color);
 }
 
 a.link.active::before {
@@ -97,7 +139,7 @@ a.link.active::after {
   margin-bottom: 2rem;
   font-size: calc(1.2rem + 1vw);
   font-family: 'Raleway', sans-serif;
-  color: #64df15;
+  color: var(--focus-color);
 }
 
 .profile-txt {
@@ -107,7 +149,7 @@ a.link.active::after {
 .profile-box img {
   width: 14rem;
   border-radius: 3px;
-  box-shadow: 3px 2px 3px 1px #64df15;
+  box-shadow: 3px 2px 3px 1px var(--focus-color);
 }
 
 #profile p {
@@ -158,54 +200,6 @@ a.link.active::after {
   width: 100%;
 }
 
-/* 
-#project div {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.project-card {
-  border: 2px solid gray;
-  width: 28rem;
-  height: 22rem;
-  border-radius: 3%;
-  margin: 3.1rem;
-  color: white;
-}
-
-.project-card h2 {
-  color: white;
-}
-
-.inner-box {
-  width: 28rem;
-  height: 22rem;
-  border-radius: 2%;
-}
-
-.project-info {
-  border: 2px solid #f6e58d;
-  border-radius: 2%;
-  width: 75%;
-  margin: 0.4rem auto;
-  text-align: center;
-  word-spacing: 0.8rem;
-  font-size: 1.2rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-}
-
-.project-info svg {
-  margin: 1.5rem;
-  cursor: pointer;
-  text-decoration: none;
-  color: white;
-}
-
-.project-info svg:hover {
-  color: #faefb7;
-} */
 
 /* ----------- CV COMPONENT ------------- */
 
@@ -224,21 +218,21 @@ a.link.active::after {
   font-size: 1.2rem;
 }
 
-.downloadCVMobile {
+.downloadCV {
   display: block;
   margin-top: 3rem;
   padding: 0.6em 1em;
   font-size: 1.1em;
   background: #4eb110;
-  color: #dcdcdc;
+  color: var(--light-text-color);
   text-decoration: none;
   border-radius: 0.3em;
   border: none;
 }
 
-.downloadCVMobile:hover {
+.downloadCV:hover {
   color: #4eb110;
-  background-color: #dcdcdc;
+  background-color: var(--light-text-color);
 }
 
 
@@ -258,11 +252,11 @@ a.link.active::after {
   font-size: 2.5rem;
   margin: 2.5rem;
   cursor: pointer;
-  color: white;
+  color: var(--light-text-color);
 }
 
 #contact svg:hover {
-  color: #64df15;
+  color: var(--focus-color);
   transform: scale(1.2);
 }
 
@@ -297,7 +291,7 @@ a.link.active::after {
   border-radius: 3%;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.2);
-  color: white;
+  color: var(--light-text-color);
   width: 15rem;
   font-size: 1.3rem;
   font-family: "Oswald", sans-serif;
@@ -324,19 +318,10 @@ a.link.active::after {
 
   .box {
     margin: 3rem;
-    background-color: #20232a
   }
 
   .box#cv {
     margin-left: 0;
-  }
-
-  #contact:last-of-type {
-    margin-bottom: 2rem;
-  }
-
-  .paragraph {
-    font-size: 1rem;
   }
 
   /* ----------- BURGER MENU ------------- */
@@ -345,7 +330,6 @@ a.link.active::after {
     border: none;
     background-color: rgba(32, 35, 42, 0);
   }
-
 
   .bm-burger-button {
     position: fixed;
@@ -356,8 +340,12 @@ a.link.active::after {
   }
 
   .bm-burger-bars {
-    background: gainsboro;
+    background: var(--light-text-color);
     border-radius: 13%;
+  }
+
+  .bm-burger-button:hover .bm-burger-bars {
+    background: var(--focus-color);
   }
 
   .bm-cross-button {
@@ -370,14 +358,18 @@ a.link.active::after {
   }
 
   .bm-cross {
-    background: gainsboro;
+    background: var(--light-text-color);
     width: 0.3rem !important;
     height: 2.1rem !important;
   }
 
+  .bm-cross-button:hover .bm-cross {
+    background: var(--focus-color);
+  }
+
   .bm-item {
     display: inline-block;
-    color: gainsboro;
+    color: var(--light-text-color);
     margin-top: 2rem !important;
   }
 
@@ -434,24 +426,6 @@ a.link.active::after {
   /* ----------- PROJECT SECTION ------------- */
 
 
-  /* .project-card {
-    width: 22rem;
-    height: 17rem;
-  }
-
-  .inner-box {
-    width: 22rem;
-    height: 17rem;
-  }
-
-  .project-info {
-    width: 100%;
-    margin-top: -1rem;
-  }
-
-  .project-info p {
-    font-size: 1.3rem;
-  } */
 
   /* ----------- CV SECTION ------------- */
 

@@ -2,20 +2,6 @@ import React, { useState } from "react";
 import CV from "../images/CV.pdf";
 
 const Cv = () => {
-  // const [hover, setHover] = useState(false);
-
-  // const handleHover = () => {
-  //   setHover(!hover);
-  // };
-
-  // const download = {
-  //   display: hover ? "block" : "none",
-  // };
-
-  // const cvBackground = {
-  //   backgroundColor: hover && "rgba(0, 0, 0, 0.6)",
-  //   position: hover && "absolute",
-  // };
 
   return (
     <>
@@ -41,29 +27,7 @@ if (interested) {
           </pre>        
         </code>
 
-          {/* <div className="cv-pic">
-            <div
-              onMouseOver={handleHover}
-              onMouseOut={handleHover}
-              style={cvBackground}
-              className="cv-background"
-            >
-              <div className="cv-download" style={download}>
-                <a href={CV} download="Lanougadere_Philippe_CV">
-                  <FontAwesomeIcon icon={faDownload} />
-                </a>
-                <a
-                  href={process.env.PUBLIC_URL + "/Lanougadere_Philippe_CV.pdf"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </a>
-              </div>
-            </div>
-          </div> */}
-
-          <a href={CV} download="Lanougadere_Philippe_CV" className="downloadCVMobile">
+          <a href={CV} download="Lanougadere_Philippe_CV" className="downloadCV">
                   download CV
                 </a>
 
