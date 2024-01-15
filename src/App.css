@@ -15,7 +15,6 @@
   --btn-focus-color: #4eb110;
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -132,24 +131,19 @@ a.link.active::after {
   border-radius: 3px;
   box-shadow: 3px 2px 3px 1px var(--focus-color);
   animation: float 2s ease-in-out infinite;
-  /* transition: 0.1s ease-in-out; */
 }
 
 @keyframes float {
 	0% {
-		/* box-shadow: 3px 2px 3px 1px var(--focus-color); */
 		transform: translatey(0px);
 	}
 	50% {
-		/* box-shadow: 3px 2px 3px 1px var(--focus-color); */
 		transform: translatey(-10px);
 	}
 	100% {
-		/* box-shadow: 3px 2px 3px 1px var(--focus-color); */
 		transform: translatey(0px);
 	}
 }
-
 
 #profile p {
   margin-top: 0;
@@ -202,7 +196,12 @@ a.link.active::after {
 
 /* ----------- CV COMPONENT ------------- */
 
+#cv {
+  margin-top: 0;
+}
+
 #cv .big-title {
+  margin-top: 4rem;
   margin-bottom: 3rem;
 }
 
@@ -227,6 +226,7 @@ a.link.active::after {
   text-decoration: none;
   border-radius: 0.3em;
   border: none;
+	animation: pulse 1.5s ease-in-out infinite;
 }
 
 .downloadCV:hover {
@@ -234,13 +234,30 @@ a.link.active::after {
   background-color: var(--light-text-color);
 }
 
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
 
 
 /* ----------- CONTACT  ------------- */
 
 #contact {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 0;
 }
 
 #contact .big-title {
@@ -298,6 +315,7 @@ a.link.active::after {
 
 
 /* ----------- FOOTER ------------- */
+
 
 .footer-text {
   text-align: right;

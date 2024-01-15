@@ -43,8 +43,8 @@ const Burger = () => {
           offset={-300}
           duration={500}
           className="link menu-item"
-          onMouseOver={handleHover}
-          onMouseOut={handleHover}
+          // onMouseOver={handleHover}
+          // onMouseOut={handleHover}
           onClick={closeMenu}
         >
           {target === "Profil" ? linkText : "Profil"}
@@ -79,7 +79,7 @@ const Burger = () => {
         </Link>
         <Link
           activeClass="active"
-          to="contact"
+          to="footer"
           spy={true}
           smooth={true}
           offset={-350}

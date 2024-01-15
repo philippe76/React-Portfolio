@@ -46,7 +46,7 @@ const Navbar = () => {
           to="cv"
           spy={true}
           smooth={true}
-          offset={-350}
+          offset={-150}
           duration={500}
           className="link"
         >
@@ -54,14 +54,15 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="contact"
+          to="footer"
           spy={true}
           smooth={true}
-          offset={-300}
+          offset={-600}
           duration={500}
           className="link"
+          onSetInactive
         >
-          {target === "Contact" ? linkText : "Contact"}
+          {target === "Footer" ? linkText : "Contact"}
         </Link>
       </div>
     </nav>
