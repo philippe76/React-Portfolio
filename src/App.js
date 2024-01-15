@@ -12,6 +12,17 @@ import Burger from "./components/Burger";
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+  
+  // const handleMouseMove = (event) => {
+  //   event.persist()
+  //   let lightZone = document.createElement('div');
+  //   lightZone.classList.add('lightZone');
+  //   lightZone.style.top = event.clientY + 'px';
+  //   lightZone.style.left = event.clientX + 'px';
+  //   document.body.prepend(lightZone);
+
+  // } 
+
   useEffect(() => {
     window.addEventListener("resize", () => {
       setWindowWidth(window.innerWidth);
