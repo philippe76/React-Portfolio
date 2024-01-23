@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="App-header">
-      <Link
+      {/* <Link
         to="home"
         spy={true}
         smooth={true}
@@ -17,7 +17,7 @@ const Navbar = () => {
         id="logo"
       >
         &lt; P.L /&gt;
-      </Link>
+      </Link> */}
       <div className="menu">
         <Link
           activeClass="active"
