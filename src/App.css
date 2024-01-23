@@ -52,6 +52,7 @@ section {
 /* ---------- NAVBAR ------------  */
 
 .App-header {
+  margin-top: 5rem;
   position: fixed;
   font-size: 1.4rem;
   font-weight: bold;
@@ -65,9 +66,7 @@ section {
 
 a.link {
   display: block;
-
-  margin: 4.3rem 1rem;
-  /* margin: 0 4.3rem; */
+  margin: 7rem 1rem;
   text-decoration: none;
   cursor: pointer;
 }

@@ -8,16 +8,6 @@ const Navbar = () => {
 
   return (
     <nav className="App-header">
-      {/* <Link
-        to="home"
-        spy={true}
-        smooth={true}
-        offset={-100}
-        duration={500}
-        id="logo"
-      >
-        &lt; P.L /&gt;
-      </Link> */}
       <div className="menu">
         <Link
           activeClass="active"
@@ -52,7 +42,7 @@ const Navbar = () => {
         >
           {target === "CV" ? linkText : "CV"}
         </Link>
-        <Link
+        {/* <Link
           activeClass="active"
           to="footer"
           spy={true}
@@ -63,7 +53,7 @@ const Navbar = () => {
           onSetInactive
         >
           {target === "Footer" ? linkText : "Contact"}
-        </Link>
+        </Link> */}
       </div>
     </nav>
   );
