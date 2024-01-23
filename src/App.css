@@ -39,10 +39,6 @@ body {
   color: var(--focus-color);
 }
 
-section {
-
-}
-
 .box {
   margin: 3rem;
   z-index: 2;
@@ -192,7 +188,7 @@ a.link.active::after {
 
 #project {
   width: 50%;
-  margin: 0 auto;
+  margin: 5rem auto 8rem;
 }
 
 #project img {

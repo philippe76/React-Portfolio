@@ -5,7 +5,6 @@ const Navbar = () => {
   const [linkText, setLinkText] = useState();
   const [target, setTarget] = useState();
 
-
   return (
     <nav className="App-header">
       <div className="menu">
@@ -25,7 +24,7 @@ const Navbar = () => {
           to="project"
           spy={true}
           smooth={true}
-          offset={-300}
+          offset={-100}
           duration={500}
           className="link"
         >
@@ -36,24 +35,12 @@ const Navbar = () => {
           to="cv"
           spy={true}
           smooth={true}
-          offset={-150}
+          offset={-200}
           duration={500}
           className="link"
         >
           {target === "CV" ? linkText : "CV"}
         </Link>
-        {/* <Link
-          activeClass="active"
-          to="footer"
-          spy={true}
-          smooth={true}
-          offset={-600}
-          duration={500}
-          className="link"
-          onSetInactive
-        >
-          {target === "Footer" ? linkText : "Contact"}
-        </Link> */}
       </div>
     </nav>
   );
