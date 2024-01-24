@@ -6,7 +6,6 @@ import { faGithub, faLinkedin, faTwitter, faTelegramPlane } from "@fortawesome/f
 const Contact = () => {
   return (
     <section className="box" id="contact">
-      <h2 className="box-title big-title">{"Me contacter"}</h2>
       <a
         href="https://github.com/philippe76"
         target="_blank"

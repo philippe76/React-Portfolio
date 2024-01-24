@@ -6,7 +6,7 @@ const Cv = () => {
   return (
     <>
       <section className="box" id="cv">
-        <h2 className="big-title"> {"Mon CV"} </h2>
+        <h2 className="big-title"> Mon CV </h2>
         <div className="cv-container">
           <code>
             <pre className="skills">

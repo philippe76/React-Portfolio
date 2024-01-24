@@ -35,7 +35,7 @@ const Navbar = () => {
           to="cv"
           spy={true}
           smooth={true}
-          offset={-200}
+          offset={-150}
           duration={500}
           className="link"
         >
