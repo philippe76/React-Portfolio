@@ -8,20 +8,15 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
 import Burger from "./components/Burger";
+import sunIcon from "./images/sun.png";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
+  const [lightModeActive, setLightModeActive] = useState(false);
   
-  // const handleMouseMove = (event) => {
-  //   event.persist()
-  //   let lightZone = document.createElement('div');
-  //   lightZone.classList.add('lightZone');
-  //   lightZone.style.top = event.clientY + 'px';
-  //   lightZone.style.left = event.clientX + 'px';
-  //   document.body.prepend(lightZone);
-
-  // } 
+  const handleDarkMode = function() {
+    setLightModeActive(prev => !prev);
+  }
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -30,8 +25,9 @@ function App() {
   }, []);
 
   return (
-    <div id="home">
+    <div id="home" className={lightModeActive ? 'lightMode' : ''}>
       {windowWidth > 1220 ? <Navbar /> : <Burger />}
+      <img src={sunIcon} alt="icône pour le mode sombre" id="darkModeIcon" onClick={handleDarkMode}/>
       <Profile />
       <Project />
       <Cv />
