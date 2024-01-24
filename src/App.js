@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
 import Burger from "./components/Burger";
 import sunIcon from "./images/sun.png";
+import moonIcon from "./images/moon.png";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -27,7 +28,7 @@ function App() {
   return (
     <div id="home" className={lightModeActive ? 'lightMode' : ''}>
       {windowWidth > 1220 ? <Navbar /> : <Burger />}
-      <img src={sunIcon} alt="icône pour le mode sombre" id="darkModeIcon" onClick={handleDarkMode}/>
+      <img src={lightModeActive ? moonIcon : sunIcon} alt="icône pour le mode sombre" id="darkModeIcon" onClick={handleDarkMode}/>
       <Profile />
       <Project />
       <Cv />
