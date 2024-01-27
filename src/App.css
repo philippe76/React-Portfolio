@@ -351,7 +351,7 @@ a.link.active::after {
   
   .App-header {
     border: none;
-    background-color: var(--main-opacity-header-mobile-bg);
+    /* background-color: var(--main-opacity-header-mobile-bg); */
   }
   
   .bm-burger-button {
@@ -433,7 +433,7 @@ a.link.active::after {
   }
   
   .stack .icon {
-    margin: 0 2rem;
+    margin: 0.5rem 2rem;
     font-size: 2.5rem;
   }
   
@@ -462,7 +462,7 @@ a.link.active::after {
 
   #contact svg {
     font-size: 2rem;
-    margin: 1.5rem;
+    margin: 1.2rem;
   }
 
   /* #contact a[href]:hover::after {
