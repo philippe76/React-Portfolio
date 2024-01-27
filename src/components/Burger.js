@@ -22,18 +22,7 @@ const Burger = () => {
 
   return (
     <nav className="App-header">
-      <Link
-        to="home"
-        spy={true}
-        smooth={true}
-        offset={-100}
-        duration={500}
-        id="logo"
-        className="menu-item"
-      >
-        &lt; P.L /&gt;
-      </Link>
-      
+            
       <Menu className="menu" right width={"100%"} isOpen={menuOpen} onStateChange={(state) => stateChangeHandler(state)}>
         <Link
           activeClass="active"
@@ -43,8 +32,6 @@ const Burger = () => {
           offset={-300}
           duration={500}
           className="link menu-item"
-          // onMouseOver={handleHover}
-          // onMouseOut={handleHover}
           onClick={closeMenu}
         >
           {target === "Profil" ? linkText : "Profil"}

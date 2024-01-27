@@ -332,145 +332,127 @@ a.link.active::after {
   /* ----------- MAIN PAGE ------------- */
 
   .box {
-    margin: 3rem;
+    max-width: 100%;
   }
 
-  .box#cv {
-    margin-left: 0;
+  section {
+    margin: 0 auto;
   }
 
+  #darkModeIcon {
+    width: 3%;
+  }
+  
   /* ----------- BURGER MENU ------------- */
-
+  
   .App-header {
     border: none;
     background-color: var(--main-opacity-header-mobile-bg);
   }
-
+  
   .bm-burger-button {
     position: fixed;
     width: 40px;
     height: 34px;
-    left: 5px;
-    top: 150px;
+    right: 2rem;
+    top: 5%;
   }
-
+  
   .bm-burger-bars {
     background: var(--main-text-color);
     border-radius: 13%;
   }
-
+  
   .bm-burger-button:hover .bm-burger-bars {
     background: var(--focus-color);
   }
-
+  
   .bm-cross-button {
-    right: 20px !important;
+    right: 2.5rem !important;
+    top: 5% !important;
   }
-
-  .bm-cross-button button {
-    right: 20px !important;
-    top: 10px !important;
-  }
-
+  
   .bm-cross {
     background: var(--main-text-color);
-    width: 0.3rem !important;
+    width: 0.5rem !important;
     height: 2.1rem !important;
   }
-
+  
   .bm-cross-button:hover .bm-cross {
     background: var(--focus-color);
   }
-
+  
   .bm-item {
     display: inline-block;
     color: var(--main-text-color);
     margin-top: 2rem !important;
   }
-
+  
   .bm-item-list {
     overflow-y: hidden !important;
   }
-
+  
   .bm-menu {
     padding: 5em 1.3em 0;
     font-size: 1.15em;
   }
-
+  
   .bm-menu-wrap {
     background-color: var(--main-opacity-mobile-bg);
     top: 0;
   }
-
+  
   /* ----------- PROFIL SECTION ------- */
-
- #profile {
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
+  
+  #profile {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  } 
+  
   #profile img {
     display: none;
   }
-
-  .profile-card {
-    width: 100%;
-  }
-
-  .profile-box {
-    padding: 0 8rem;
-  }
-
+  
   .stack {
-    /* width: 80%; */
-    padding: 0;
     margin: 2rem auto;
   }
-
+  
   .stack .icon {
     margin: 0 2rem;
     font-size: 2.5rem;
   }
   
-
+  
   /* ----------- PROJECT SECTION ------------- */
-
-
-
+  
+  
+  
   /* ----------- CV SECTION ------------- */
-
-  /* code {
-    max-width: 100%;
-  } */
+  
 
   code .skills {
-    /* margin-left: 4rem; */
     font-size: 0.9rem;
   }
-
+  
   .cv-container {
     display: flex;
     flex-direction: column;
   }
 
-  .cv-container p {
-    width: 90%;
+  .downloadCV {
+    margin-top: 3rem;
   }
 
   /* ----------- CONTACT  ------------- */
-
-  #contact.box {
-    margin: 0;
-  }
 
   #contact svg {
     font-size: 2rem;
     margin: 1.5rem;
   }
 
-  #contact a[href]:hover::after {
+  /* #contact a[href]:hover::after {
     opacity: 0;
-  }
+  } */
 
 }
