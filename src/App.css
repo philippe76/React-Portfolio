@@ -48,7 +48,7 @@ em {
   position: fixed;
   top: 1rem;
   left: 1rem;
-  width: 2%;
+  width: clamp(1.8rem, 2vw, 2.3rem);
   cursor: pointer;
 }
 
@@ -346,10 +346,6 @@ a.link.active::after {
   section {
     margin: 0 auto;
   }
-
-  #darkModeIcon {
-    width: 3%;
-  }
   
   /* ----------- BURGER MENU ------------- */
   
@@ -360,15 +356,16 @@ a.link.active::after {
   
   .bm-burger-button {
     position: fixed;
-    width: 40px;
-    height: 34px;
+    width: 2.2rem;
+    height: 2rem;
     right: 2rem;
     top: 5%;
   }
   
   .bm-burger-bars {
-    background: var(--main-text-color);
+    background: var(--focus-color);
     border-radius: 13%;
+
   }
   
   .bm-burger-button:hover .bm-burger-bars {
@@ -383,7 +380,7 @@ a.link.active::after {
   .bm-cross {
     background: var(--main-text-color);
     width: 0.5rem !important;
-    height: 2.1rem !important;
+    height: 1.8rem !important;
   }
   
   .bm-cross-button:hover .bm-cross {
@@ -417,6 +414,15 @@ a.link.active::after {
     justify-content: center;
     margin: 0 auto;
   } 
+
+  .profile-title {
+    font-size: calc(1.4rem + 1vw);
+  }
+
+  .profile-txt {
+    font-size: calc(0.7rem + 0.7vw);
+  }
+  
   
   #profile img {
     display: none;
