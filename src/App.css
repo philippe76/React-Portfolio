@@ -36,6 +36,14 @@ body {
   color: var(--main-text-color);
 }
 
+strong {
+  font-weight: unset;
+}
+
+em {
+  font-style: unset;
+}
+
 #darkModeIcon {
   position: fixed;
   top: 1rem;

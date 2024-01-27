@@ -11,9 +11,9 @@ const Profile = () => {
           Développeur Front-End
           </h2>
           <p className="profile-txt">
-            Bonjour, je m'appelle Philippe Lanougadere.</p>
+            Bonjour, je m'appelle <strong>Philippe Lanougadere</strong>.</p>
           <p className="profile-txt">
-            De formation autodidacte, je suis formateur en développement web depuis 3 ans (3WA, Ifocop, Greta...)
+            Autodidacte, je suis <strong>formateur </strong> en <strong>développement web</strong> depuis 3 ans (<em>3WA</em>, <em>Ifocop</em>, <em>Greta</em>...)
           </p>
           <p className="profile-txt">
             Adepte de nouveaux challenges, je cherche un cadre innovant dans lequel les relever
