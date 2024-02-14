@@ -7,8 +7,11 @@ const Profile = () => {
     <>
       <section className="profile-box" id="profile">
         <div className="profile-card">
-          <h2 className="profile-title">
+          <h2 className="profile-title desktop">
           Développeur Front-End
+          </h2>
+          <h2 className="profile-title mobile">
+          Développeur <br/> Front-End
           </h2>
           <p className="profile-txt">
             Bonjour, je m'appelle <strong>Philippe Lanougadere</strong>.</p>

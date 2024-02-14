@@ -3,8 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:wght@200;400&display=swap');
 
-/* MOBILE FIRST */
-
 :root {
   --main-bg: #20232a;
   --main-opacity-header-mobile-bg: rgba(32, 35, 42, 0);
@@ -55,6 +53,7 @@ em {
 section {
   width: 55%;
   margin: 7rem 30rem;
+  margin: 7rem auto;
 }
 
 .big-title {
@@ -117,6 +116,11 @@ a.link.active::after {
   height: 20rem;
 }
 
+.profile-title.mobile {
+  display: none;
+}
+
+
 .profile-card {
   width: 48%;
 }
@@ -143,6 +147,10 @@ a.link.active::after {
   font-size: calc(1.2rem + 1vw);
   font-family: 'Raleway', sans-serif;
   color: var(--focus-color);
+}
+
+.profile-title.mobile {
+  display: none;
 }
 
 .profile-txt {
@@ -179,7 +187,7 @@ a.link.active::after {
 }
 
 .icon {
-  margin: 3.5rem;
+  margin: 2rem;
   font-size: 4rem;
 }
 
@@ -192,16 +200,19 @@ a.link.active::after {
 }
 
 .icon:nth-child(3) {
+  color: #cf649a;
+}
+.icon:nth-child(4) {
   color: #f7e018;
 }
 
-.icon:nth-child(4) {
+.icon:nth-child(5) {
   color: #5ed3f3;
 }
 
-.icon:nth-child(5) {
+/* .icon:nth-child(6) {
   color: #8bbf3d;
-}
+} */
 
 
 /* ----------- PROJECT COMPONENT ------------- */
@@ -218,8 +229,8 @@ a.link.active::after {
 
 .cv-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 .skills {
@@ -229,6 +240,7 @@ a.link.active::after {
 
 .downloadCV {
   display: block;
+  margin-top: 3rem;
   padding: 0.6em 1em;
   font-size: 0.85em;
   background: var(--btn-bg-color);
@@ -351,7 +363,6 @@ a.link.active::after {
   
   .App-header {
     border: none;
-    /* background-color: var(--main-opacity-header-mobile-bg); */
   }
   
   .bm-burger-button {
@@ -419,6 +430,15 @@ a.link.active::after {
     font-size: calc(1.4rem + 1vw);
   }
 
+  .profile-title.desktop {
+    display: none;
+  }
+  
+  .profile-title.mobile {
+    display: block;
+    text-align: center;
+  }
+
   .profile-txt {
     font-size: calc(0.7rem + 0.7vw);
   }
@@ -433,7 +453,7 @@ a.link.active::after {
   }
   
   .stack .icon {
-    margin: 0.5rem 2rem;
+    margin: 0.5rem 1.5rem;
     font-size: 2.5rem;
   }
   
@@ -449,24 +469,21 @@ a.link.active::after {
     font-size: 0.9rem;
   }
   
-  .cv-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .downloadCV {
-    margin-top: 3rem;
-  }
 
   /* ----------- CONTACT  ------------- */
 
+
+  #contact {
+    margin-top: 4rem;
+  }
+  
   #contact svg {
     font-size: 2rem;
-    margin: 1.2rem;
+    margin: 1.1rem;
   }
 
-  /* #contact a[href]:hover::after {
+  #contact a[href]:hover::after {
     opacity: 0;
-  } */
+  }
 
 }

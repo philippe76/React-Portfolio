@@ -10,19 +10,19 @@ const Cv = () => {
         <div className="cv-container">
           <code>
             <pre className="skills">
-            {`const hard_skills = {                
-    HTML: 5,
-    CSS: [3, "Bootstrap"],
-    JavaScript: ["ES6", "jQuery", “ReactJs", “NodeJs"],
-    responsive_design: true,
-    version_control: "Git",
-    IDE: "Visual Studio Code", 	
+            {`const hardSkills = {                
+    CSS: ['Bootstrap', 'SASS'],
+    JavaScript: ['ES6', 'jQuery', 'React'],
+    Responsiveness: true,
+    Versionning: 'Git',
+    IDE: 'VSCode' 	
 };
 
-const soft_skills = ["Bosseur", "Positif", "Curieux", "Tenace"];
+const softSkills = ['Positif', 'Curieux', 'Tenace'];
 
 if (interested) {
-    download(cv).then( infos => call_me(infos.tel) )
+    download(cv)
+     .then( infos => callMe(infos.tel) )
 }; `}
           </pre>        
         </code>
