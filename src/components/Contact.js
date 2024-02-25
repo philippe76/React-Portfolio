@@ -1,41 +1,39 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin, faTwitter, faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
+import { FaSquareGithub, FaLinkedin, FaEnvelope, FaSquarePhoneFlip, FaSquareXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   return (
     <section className="box" id="contact">
       <a
-        href="https://github.com/philippe76"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faGithub} />
-      </a>
-      <a
         href="https://www.linkedin.com/in/philippe-lanougadere/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faLinkedin} />
+        <FaLinkedin />
       </a>
       <a
+        href="https://github.com/philippe76"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaSquareGithub />
+      </a>
+      {/* <a
         href="https://twitter.com/I_m_your_dev"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faTwitter} />
-      </a>
+        <FaSquareXTwitter />
+      </a> */}
       <a
         href="mailto:p.lanougadere@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faTelegramPlane} />
+        <FaEnvelope />
       </a>
       <a href="tel:33660803766">
-        <FontAwesomeIcon icon={faMobileAlt} />
+        <FaSquarePhoneFlip />
       </a>
     </section>
   );
