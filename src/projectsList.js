@@ -1,16 +1,16 @@
 
-import hangman from "./images/hangman.PNG";
+import ottomanGrill from "./images/OttomanGrill.png";
 // import foodApp from "./images/foodApp.PNG";
 
 const projects = [
 
   {
     id: 1,
-    title: "HANGMAN GAME",
-    background: hangman,
-    tech: "css javascript react",
-    github: "https://github.com/philippe76/React-HangMan-Game",
-    url: "https://philippe76.github.io/React-HangMan-Game/"
+    title: "Ottoman Grill",
+    background: ottomanGrill,
+    tech: "Sass JavaScript",
+    github: "https://github.com/philippe76/Ottoman-Grill",
+    url: "https://philippe76.github.io/Ottoman-Grill/"
   }
   // {
   //   id: 2,
