@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../images/CV.pdf";
+import CV from "../images/Lanougadere_Philippe_CV.pdf";
 
 const Cv = () => {
 
@@ -27,7 +27,7 @@ if (interested) {
           </pre>        
         </code>
 
-          <a href={CV} download="Lanougadere_Philippe_CV" className="downloadCV">
+          <a href={CV} className="downloadCV">
                   download CV
                 </a>
 
