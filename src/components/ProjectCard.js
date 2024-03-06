@@ -1,47 +1,26 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import React from "react";
+import { FaSquareGithub } from "react-icons/fa6";
+import { AiOutlineGlobal } from "react-icons/ai";
 
-const ProjectCard = (props) => {
-  const [hover, setHover] = useState(true);
-
-  const infoStyle = {
-    display: hover ? "none" : "block",
-  };
-
-  const divStyle = {
-    backgroundColor: !hover && "rgba(0, 0, 0, 0.8)",
-    position: !hover && "absolute",
-  };
-
-  const handleChange = () => {
-    setHover(!hover);
-  };
+const ProjectCard = ({background, title, tech, url, github}) => {
 
   return (
     <>
       <div
         className="project-card"
-        onMouseOver={handleChange}
-        onMouseOut={handleChange}
-        style={{ background: `center / contain no-repeat url(${props.background})`, backgroundColor: 'gainsboro' }}
+        style={{backgroundImage: `url(${background})`}}
       >
-        <div style={divStyle} className="inner-box">
-          <div style={infoStyle} className="project-info">
-            <h2 className="big-title">{props.title}</h2>
-            <p className="paragraph">🛠 {props.tech}</p>
-            <p>
-              <a href={props.url} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faExternalLinkAlt} />
-              </a>
-
-              <a href={props.github} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </p>
-            <p className="paragraph">credits: {props.credits}</p>
-          </div>
+        <div className="project-info">
+          <h2>{title}</h2>            
+          <p> {tech}</p>
+          <div>
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              <AiOutlineGlobal size={'2rem'} />
+            </a>
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              <FaSquareGithub size={'2rem'} />
+            </a>
+          </div>            
         </div>
       </div>
     </>

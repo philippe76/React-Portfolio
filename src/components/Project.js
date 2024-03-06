@@ -8,7 +8,7 @@ const Project = () => {
   return (
     <section className="box" id="project">
       <h2 className="big-title"> {"Mes Projets"} </h2>
-      <div>
+      <article>
       <img src={underConstruction} alt="bande jaune site en travaux" />
         {/* {projectsList.map((item) => (
           <ProjectCard
@@ -18,10 +18,9 @@ const Project = () => {
             tech={item.tech}
             github={item.github}
             url={item.url}
-            credits={item.credits}
           />
         ))} */}
-      </div>
+      </article>
     </section>
   );
 };
