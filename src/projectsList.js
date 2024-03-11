@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: "Ottoman Grill",
     background: ottomanGrill,
-    tech: "Sass JavaScript",
+    tech: "HTML Sass JavaScript",
     github: "https://github.com/philippe76/Ottoman-Grill",
     url: "https://philippe76.github.io/Ottoman-Grill/"
   }

@@ -9,8 +9,8 @@ const Project = () => {
     <section className="box" id="project">
       <h2 className="big-title"> {"Mes Projets"} </h2>
       <article>
-      <img src={underConstruction} alt="bande jaune site en travaux" />
-        {/* {projectsList.map((item) => (
+      {/* <img src={underConstruction} alt="bande jaune site en travaux" /> */}
+        {projectsList.map((item) => (
           <ProjectCard
             key={item.id}
             title={item.title}
@@ -19,7 +19,7 @@ const Project = () => {
             github={item.github}
             url={item.url}
           />
-        ))} */}
+        ))}
       </article>
     </section>
   );
