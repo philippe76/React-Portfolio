@@ -218,11 +218,11 @@ a.link.active::after {
 /* ----------- PROJECT COMPONENT ------------- */
 
 
-#project img {
+/* #project img {
   display: block;
   margin: 0 auto;
   width: 80%;
-}
+} */
 
 
   #project article {
@@ -233,17 +233,17 @@ a.link.active::after {
   }
   
   .project-card {
-    width: 40rem;
-    height: 22rem;
+    width: 45rem;
+    height: 18rem;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: 20%;
+    background-position: 10%;
   }
 
   .project-info {
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    color: #e3e3e3;
     width: 100%;
     height: 100%;
     display: flex;
@@ -269,7 +269,7 @@ a.link.active::after {
   
   .project-info svg {
     cursor: pointer;
-    color: #fff;
+    color: #e3e3e3;
     margin: 1rem;
   }
   
